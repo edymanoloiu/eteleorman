@@ -43,8 +43,6 @@ const HomeOne = ({ allPosts, sitemaps }) => {
 export default HomeOne;
 
 export async function getServerSideProps() {
-	const parser = new Parser({ timeout: 2000 });
-
 	const posts = (await getAllPosts([
 		"postFormat",
 		"trending",
@@ -76,14 +74,14 @@ export async function getServerSideProps() {
 	];
 
 	const weboSitemaps = await Promise.allSettled([
-		parser.parseURL("https://obliqdesign.ro/rss.xml"),
-		parser.parseURL("https://meritasamergi.ro/rss.xml"),
-		parser.parseURL("https://ghidullegal.ro/rss.xml"),
-		parser.parseURL("https://sfaturidesanatate.ro/rss.xml"),
-		parser.parseURL("https://ghidulgospodarului.ro/rss.xml"),
-		parser.parseURL("https://azicemancam.ro/rss.xml"),
-		parser.parseURL("https://cautimasina.ro/rss.xml"),
-		parser.parseURL("https://painesicirc.ro/rss.xml"),
+		new Parser({ timeout: 2000 }).parseURL("https://obliqdesign.ro/rss.xml"),
+		new Parser({ timeout: 2000 }).parseURL("https://meritasamergi.ro/rss.xml"),
+		new Parser({ timeout: 2000 }).parseURL("https://ghidullegal.ro/rss.xml"),
+		new Parser({ timeout: 2000 }).parseURL("https://sfaturidesanatate.ro/rss.xml"),
+		new Parser({ timeout: 2000 }).parseURL("https://ghidulgospodarului.ro/rss.xml"),
+		new Parser({ timeout: 2000 }).parseURL("https://azicemancam.ro/rss.xml"),
+		new Parser({ timeout: 2000 }).parseURL("https://cautimasina.ro/rss.xml"),
+		new Parser({ timeout: 2000 }).parseURL("https://painesicirc.ro/rss.xml"),
 	]);
 
 	return {
