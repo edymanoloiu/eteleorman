@@ -1,0 +1,25 @@
+# Dependencies / Next.js build
+node_modules/
+.next/
+
+# OpenNext (Cloudflare) build output
+.open-next
+.wrangler
+
+# Local secrets / env
+.env
+.env.local
+.env.*.local
+
+out/
+# Generated at build time (scripts/generate-sitemaps.js)
+public/news-sitemap.xml
+public/sitemap.xml
+public/sitemap-index.xml
+public/sitemap-articole.xml
+public/sitemaps/
+out/
+
+# Generated evergreen mirrors (recreated by npm run generate:evergreen)
+public/_evergreen/
+public/evergreen-index.json

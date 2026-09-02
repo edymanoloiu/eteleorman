@@ -1,0 +1,29 @@
+{
+  "city": "Alexandria",
+  "county": "Teleorman",
+  "stability": "incomplete",
+  "knowledge_status": "missing_local_entities",
+  "notes": [
+    "Baza locală a fost creată automat ca placeholder editorial.",
+    "Completați cartiere, spitale, parcuri, operatori de transport, instituții și surse oficiale înainte de generarea articolelor publicabile.",
+    "Generatorul va sări peste șabloanele care depind de date locale neverificate."
+  ],
+  "neighborhoods": [],
+  "transport": {
+    "operators": []
+  },
+  "health": {
+    "hospitals": []
+  },
+  "leisure": {
+    "parks": []
+  },
+  "administration": {
+    "city_hall": {
+      "name": "Primăria Alexandria",
+      "stability": "dynamic",
+      "recheck_frequency": "before_each_use"
+    }
+  },
+  "sources": []
+}

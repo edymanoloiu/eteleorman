@@ -1,0 +1,14 @@
+[
+	{
+		"label": "Azi în ",
+		"path": "/categorie/azi-in-alexandria"
+	},
+	{
+		"label": "Știri naționale și internaționale",
+		"path": "/categorie/stiri-nationale-si-internationale"
+	},
+	{
+		"label": "Evenimente și Cultură în Alexandria",
+		"path": "/categorie/evenimente-si-cultura"
+	}
+]

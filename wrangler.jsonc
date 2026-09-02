@@ -1,0 +1,26 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"main": ".open-next/worker.js",
+	"name": "aziinalexandria",
+	"compatibility_date": "2025-12-05",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	"observability": {
+		"logs": {
+			"enabled": true,
+			"head_sampling_rate": 0.05,
+			"invocation_logs": true,
+			"persist": false
+		},
+		"enabled": false
+	}
+	// No services (removed WORKER_SELF_REFERENCE)
+	// No images binding
+	// No R2 buckets (cache disabled in open-next.config.ts)
+}

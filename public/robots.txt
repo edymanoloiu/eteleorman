@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /gdpr/
+Disallow: /cookies/
+Disallow: /cauta/
+Disallow: /api/
+Disallow: /_next/
+Allow: /
+Sitemap: https://eteleorman.ro/sitemap-index.xml

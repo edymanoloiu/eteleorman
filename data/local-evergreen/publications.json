@@ -1,0 +1,12 @@
+[
+  {
+    "city": "Alexandria",
+    "county": "Teleorman",
+    "publication": "eteleorman.ro",
+    "publicationName": "eTeleorman",
+    "slug": "alexandria",
+    "canonicalDomain": "https://eteleorman.ro",
+    "knowledge_file": "data/cities/alexandria.json",
+    "localCate": "Azi in Alexandria"
+  }
+]

@@ -1,0 +1,385 @@
+{
+  "generatedAt": "2026-07-31T05:34:25.409Z",
+  "domain": "https://eteleorman.ro",
+  "articleCount": 4061,
+  "summary": {
+    "critical": 0,
+    "high": 7,
+    "medium": 45,
+    "low": 0,
+    "total": 52
+  },
+  "issues": [
+    {
+      "severity": "medium",
+      "code": "missing_image",
+      "slug": "2026-06-17-t03-predoiu-eteleorman",
+      "file": "2026-06-17-t03-predoiu-eteleorman.md"
+    },
+    {
+      "severity": "high",
+      "code": "invalid_date",
+      "slug": "2026-06-17-t03-predoiu-eteleorman",
+      "file": "2026-06-17-t03-predoiu-eteleorman.md"
+    },
+    {
+      "severity": "medium",
+      "code": "missing_author",
+      "slug": "2026-06-17-t03-predoiu-eteleorman",
+      "file": "2026-06-17-t03-predoiu-eteleorman.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "adolescenta-de-13-ani-exploatata-prin-trafic-de-trei-suspecti-dintre-care-doi-minori",
+      "wordCount": 67,
+      "file": "adolescenta-de-13-ani-exploatata-prin-trafic-de-trei-suspecti-dintre-care-doi-minori.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "avertisment-privind-deficitul-bugetar",
+      "wordCount": 105,
+      "file": "avertisment-privind-deficitul-bugetar.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "avertisment-privind-deficitul",
+      "wordCount": 96,
+      "file": "avertisment-privind-deficitul.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "barbat-din-rosiori-arestat-dupa-ce-si-a-amenintat-sotia-si-mama",
+      "wordCount": 99,
+      "file": "barbat-din-rosiori-arestat-dupa-ce-si-a-amenintat-sotia-si-mama.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "bugetul-romaniei-pentru-2026-in-dezbatere",
+      "wordCount": 110,
+      "file": "bugetul-romaniei-pentru-2026-in-dezbatere.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "bugetul-romaniei-pentru-2026",
+      "wordCount": 100,
+      "file": "bugetul-romaniei-pentru-2026.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "carburantii-se-scumpesc-din-nou",
+      "wordCount": 104,
+      "file": "carburantii-se-scumpesc-din-nou.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "ceata-afecteaza-traficul-pe-autostrazi",
+      "wordCount": 109,
+      "file": "ceata-afecteaza-traficul-pe-autostrazi.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "ceata-afecteaza-traficul",
+      "wordCount": 98,
+      "file": "ceata-afecteaza-traficul.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "cele-mai-importante-evenimente-culturale-din-alexandria-7-decembrie-2025",
+      "wordCount": 92,
+      "file": "cele-mai-importante-evenimente-culturale-din-alexandria-7-decembrie-2025.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "comunicat-local-privind-obiecte-si-acte-pierdute",
+      "wordCount": 106,
+      "file": "comunicat-local-privind-obiecte-si-acte-pierdute.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "conflictul-din-orientul-mijlociu-afecteaza-zborurile-internationale",
+      "wordCount": 117,
+      "file": "conflictul-din-orientul-mijlociu-afecteaza-zborurile-internationale.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "cooperarea-regionala-in-europa-de-est",
+      "wordCount": 104,
+      "file": "cooperarea-regionala-in-europa-de-est.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "cooperarea-romaniaucraina-continua",
+      "wordCount": 104,
+      "file": "cooperarea-romaniaucraina-continua.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "cresterea-preturilor-la-carburanti-in-romania",
+      "wordCount": 89,
+      "file": "cresterea-preturilor-la-carburanti-in-romania.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "criza-energetica-europeana",
+      "wordCount": 95,
+      "file": "criza-energetica-europeana.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "cursul-valutar-fluctueaza",
+      "wordCount": 99,
+      "file": "cursul-valutar-fluctueaza.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "dezbaterea-bugetului-pentru-2026-se-intensifica",
+      "wordCount": 107,
+      "file": "dezbaterea-bugetului-pentru-2026-se-intensifica.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "economia-romaniei-in-2026-intre-investitii-si-riscuri",
+      "wordCount": 112,
+      "file": "economia-romaniei-in-2026-intre-investitii-si-riscuri.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "economia-romaniei-in-2026",
+      "wordCount": 99,
+      "file": "economia-romaniei-in-2026.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "escroci-care-se-dau-drept-inspectori-anaf-pot-lasa-conturile-bancare-fara-bani",
+      "wordCount": 107,
+      "file": "escroci-care-se-dau-drept-inspectori-anaf-pot-lasa-conturile-bancare-fara-bani.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "germania-prelungeste-controalele-la-frontiera",
+      "wordCount": 107,
+      "file": "germania-prelungeste-controalele-la-frontiera.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "guvernul-simplifica-procedurile-pentru-investitiile-straine",
+      "wordCount": 111,
+      "file": "guvernul-simplifica-procedurile-pentru-investitiile-straine.md"
+    },
+    {
+      "severity": "high",
+      "code": "thin_content",
+      "slug": "informare-anm-pentru-populatie-in-alexandria",
+      "wordCount": 29,
+      "file": "informare-anm-pentru-populatie-in-alexandria.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "informare-locala-privind-bunuri-pierdute",
+      "wordCount": 107,
+      "file": "informare-locala-privind-bunuri-pierdute.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "informatii-importante-varietate-de-subiecte-locale",
+      "wordCount": 95,
+      "file": "informatii-importante-varietate-de-subiecte-locale.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "leul-pierde-teren-in-fata-dolarului",
+      "wordCount": 113,
+      "file": "leul-pierde-teren-in-fata-dolarului.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "nato-isi-intareste-monitorizarea-in-regiune",
+      "wordCount": 108,
+      "file": "nato-isi-intareste-monitorizarea-in-regiune.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "piata-energiei-din-europa-ramane-volatila",
+      "wordCount": 105,
+      "file": "piata-energiei-din-europa-ramane-volatila.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "piata-energiei-din-europa-sub-presiune",
+      "wordCount": 111,
+      "file": "piata-energiei-din-europa-sub-presiune.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "plafonarea-adaosului-comercial-la-alimente-se-extinde-pana-in-2026",
+      "wordCount": 55,
+      "file": "plafonarea-adaosului-comercial-la-alimente-se-extinde-pana-in-2026.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "pompierii-au-actionat-in-patru-situatii-pentru-indepartarea-arborilor-doborati-in-cursul-diminetii",
+      "wordCount": 111,
+      "file": "pompierii-au-actionat-in-patru-situatii-pentru-indepartarea-arborilor-doborati-in-cursul-diminetii.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "preturile-la-carburanti-cresc-din-nou-in-romania",
+      "wordCount": 119,
+      "file": "preturile-la-carburanti-cresc-din-nou-in-romania.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "protest-al-iranienilor-in-fata-ambasadei-iranului",
+      "wordCount": 86,
+      "file": "protest-al-iranienilor-in-fata-ambasadei-iranului.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "romania-devine-un-hub-logistic-important-in-europa-de-est",
+      "wordCount": 108,
+      "file": "romania-devine-un-hub-logistic-important-in-europa-de-est.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "romania-monitorizeaza-situatia-de-securitate-regionala",
+      "wordCount": 103,
+      "file": "romania-monitorizeaza-situatia-de-securitate-regionala.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "schimbari-de-vreme-in-romania",
+      "wordCount": 103,
+      "file": "schimbari-de-vreme-in-romania.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_title",
+      "slug": "situatia-s-a-calmat",
+      "title": "Situația s-a calmat",
+      "file": "situatia-s-a-calmat.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "tanar-retinut-dupa-ce-a-intrat-in-sant-fara-permis-de-conducere",
+      "wordCount": 61,
+      "file": "tanar-retinut-dupa-ce-a-intrat-in-sant-fara-permis-de-conducere.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "tensiuni-politice-in-jurul-marilor-reforme-economice",
+      "wordCount": 108,
+      "file": "tensiuni-politice-in-jurul-marilor-reforme-economice.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "tensiunile-de-securitate-din-europa-cresc",
+      "wordCount": 104,
+      "file": "tensiunile-de-securitate-din-europa-cresc.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "tensiunile-din-orientul-mijlociu-afecteaza-pietele-energetice",
+      "wordCount": 90,
+      "file": "tensiunile-din-orientul-mijlociu-afecteaza-pietele-energetice.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "tensiunile-din-orientul-mijlociu-cresc",
+      "wordCount": 106,
+      "file": "tensiunile-din-orientul-mijlociu-cresc.md"
+    },
+    {
+      "severity": "medium",
+      "code": "short_content",
+      "slug": "transportul-european-afectat-de-tensiuni-geopolitice",
+      "wordCount": 108,
+      "file": "transportul-european-afectat-de-tensiuni-geopolitice.md"
+    },
+    {
+      "severity": "high",
+      "code": "duplicate_description",
+      "description": "în era digitală, advertoriale seo ieftine este esențial pentru vizibilitate și creștere. această postare explică cum dep",
+      "slugs": [
+        "advertoriale-seo-ieftine-marketing-digital-la-abonament",
+        "orice-afacere-are-nevoie-de-contracte-legale-ai-bine-redactate-aceasta-postare-explica-cum-contracte-app-te-poate-ajuta"
+      ]
+    },
+    {
+      "severity": "high",
+      "code": "duplicate_description",
+      "description": "marketingul bazat pe clienți reali pune autenticitatea și comunitatea în centrul strategiei de comunicare, folosind expe",
+      "slugs": [
+        "autenticitate-si-comunitate-puterea-marketingului-bazat-pe-clienti-reali",
+        "cautarea-vocala-in-crestere-pasii-esentiali-pentru-optimizarea-site-ului-tau"
+      ]
+    },
+    {
+      "severity": "high",
+      "code": "duplicate_description",
+      "description": "vizibilitatea redusă creează probleme pe mai multe drumuri.",
+      "slugs": [
+        "ceata-afecteaza-traficul-pe-autostrazi",
+        "ceata-afecteaza-traficul"
+      ]
+    },
+    {
+      "severity": "high",
+      "code": "duplicate_description",
+      "description": "în 2026, un cabinet stomatologic are nevoie de un website pentru a atrage pacienți noi și pentru a rămâne relevant într-",
+      "slugs": [
+        "de-ce-iti-trebuie-un-site-in-2026-cum-sa-atragi-noi-clienti-si-sa-ramai-relevant-ghid-pentru-service-uri-auto",
+        "de-ce-iti-trebuie-un-site-in-2026-cum-sa-atragi-noi-clienti-si-sa-ramai-relevant"
+      ]
+    },
+    {
+      "severity": "high",
+      "code": "duplicate_description",
+      "description": "gestionarea finanțelor și monitorizare cheltuieli pot fi provocatoare fără instrumente adecvate. această postare explică",
+      "slugs": [
+        "in-lumea-auto-puterea-motorului-comparatie-este-o-prioritate-pentru-multi-cumparatori-aceasta-postare-explica-cum-cautimasina-ro-te-poate-ajuta",
+        "monitorizare-cheltuieli-solutii-inteligente-de-economisire"
+      ]
+    }
+  ]
+}

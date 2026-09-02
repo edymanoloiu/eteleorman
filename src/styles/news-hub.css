@@ -1,0 +1,448 @@
+/* Soledad News Hub – https://soledaddemo.pencidesign.net/soledad-news-hub/ */
+
+.nh-hub {
+  background: var(--soledad-bg);
+  color: var(--soledad-text);
+  font-family: var(--soledad-font-body);
+}
+
+.nh-hub a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nh-hub a:hover {
+  color: var(--soledad-accent);
+}
+
+/* Top mosaic + spotlight */
+.nh-top-section {
+  padding: 32px 0 40px;
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-top-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 36px;
+  align-items: start;
+}
+
+.nh-top-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.nh-story-card .soledad-trending-card {
+  aspect-ratio: 16/10;
+  margin-bottom: 14px;
+}
+
+.nh-story-card__body h2 {
+  font-family: var(--soledad-font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 10px;
+}
+
+.nh-story-card__body h2 a {
+  color: var(--soledad-text);
+}
+
+.nh-story-card__body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--soledad-text-muted);
+  margin: 0;
+}
+
+.nh-spotlight {
+  background: var(--soledad-bg-elevated);
+  border: 1px solid var(--soledad-border);
+  padding: 22px 24px;
+}
+
+.nh-spotlight__title {
+  font-family: var(--soledad-font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--soledad-accent);
+}
+
+.nh-spotlight ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nh-spotlight li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-spotlight li:last-child {
+  border-bottom: none;
+}
+
+.nh-spotlight li a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+  display: block;
+}
+
+.nh-spotlight li span {
+  font-size: 11px;
+  color: var(--soledad-text-muted);
+  margin-top: 4px;
+  display: block;
+}
+
+/* Dual category lists */
+.nh-dual-section {
+  padding: 36px 0;
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-dual-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.nh-cat-list__title {
+  font-family: var(--soledad-font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--soledad-accent);
+}
+
+.nh-cat-list__title a {
+  color: var(--soledad-text);
+}
+
+.nh-cat-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nh-cat-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-cat-list li:last-child {
+  border-bottom: none;
+}
+
+.nh-cat-list__link {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  display: block;
+}
+
+.nh-cat-list__date {
+  font-size: 12px;
+  color: var(--soledad-text-muted);
+  margin-top: 6px;
+  display: block;
+}
+
+/* Section blocks */
+.nh-section {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-section--alt {
+  background: var(--soledad-bg-elevated);
+}
+
+.nh-section__title {
+  font-family: var(--soledad-font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 28px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--soledad-accent);
+}
+
+.nh-section__title a {
+  color: var(--soledad-text);
+}
+
+/* Video grid */
+.nh-video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.nh-video-grid .soledad-trending-card {
+  aspect-ratio: 16/10;
+}
+
+/* Politics */
+.nh-politics-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+.nh-politics-layout__lead .soledad-hero-card {
+  min-height: 380px;
+}
+
+.nh-politics-more {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.nh-politics-more li {
+  padding: 12px 0;
+  border-top: 1px solid var(--soledad-border);
+}
+
+.nh-politics-more a {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  display: block;
+}
+
+.nh-politics-more span {
+  font-size: 12px;
+  color: var(--soledad-text-muted);
+  margin-top: 6px;
+  display: block;
+}
+
+/* Lifestyle */
+.nh-lifestyle-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.nh-lifestyle-layout__featured .soledad-hero-card {
+  min-height: 420px;
+}
+
+.nh-lifestyle-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nh-lifestyle-links li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-lifestyle-links li a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  display: block;
+}
+
+.nh-lifestyle-links li span {
+  font-size: 12px;
+  color: var(--soledad-text-muted);
+  margin-top: 6px;
+  display: block;
+}
+
+/* Dual hero */
+.nh-dual-hero {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-dual-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.nh-dual-hero__item .soledad-hero-card {
+  min-height: 400px;
+}
+
+/* Sci-tech */
+.nh-scitech-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 32px;
+  align-items: start;
+}
+
+.nh-scitech-layout__lead .soledad-hero-card {
+  min-height: 360px;
+  margin-bottom: 14px;
+}
+
+.nh-scitech-layout__excerpt {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--soledad-text-muted);
+  margin: 0;
+}
+
+.nh-scitech-minis {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nh-scitech-minis li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-scitech-minis li a {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  display: block;
+}
+
+.nh-scitech-minis li span {
+  font-size: 12px;
+  color: var(--soledad-text-muted);
+  margin-top: 6px;
+  display: block;
+}
+
+/* Popular grid */
+.nh-popular-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.nh-popular-grid .soledad-trending-card {
+  aspect-ratio: 4/3;
+}
+
+/* Magazine columns */
+.nh-magazine-cols-wrap {
+  padding: 44px 0;
+  background: var(--soledad-bg-elevated);
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-magazine-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.nh-mag-col__title {
+  font-family: var(--soledad-font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--soledad-accent);
+}
+
+.nh-mag-col__title a {
+  color: var(--soledad-text);
+}
+
+.nh-mag-col__featured {
+  margin-bottom: 16px;
+}
+
+.nh-mag-col__featured .soledad-trending-card {
+  aspect-ratio: 16/10;
+}
+
+.nh-mag-col__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nh-mag-col__list li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--soledad-border);
+}
+
+.nh-mag-col__list li:last-child {
+  border-bottom: none;
+}
+
+.nh-mag-col__list a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  display: block;
+}
+
+.nh-mag-col__date {
+  font-size: 11px;
+  color: var(--soledad-text-muted);
+  margin-top: 4px;
+  display: block;
+}
+
+body.bn2-theme .nh-hub a.soledad-trending-card,
+body.bn2-theme .nh-hub a.soledad-trending-card:hover {
+  color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .nh-top-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .nh-top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nh-dual-cols,
+  .nh-politics-layout,
+  .nh-lifestyle-layout,
+  .nh-scitech-layout,
+  .nh-dual-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nh-video-grid,
+  .nh-popular-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nh-magazine-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nh-politics-more {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .nh-video-grid,
+  .nh-popular-grid,
+  .nh-magazine-cols {
+    grid-template-columns: 1fr;
+  }
+}

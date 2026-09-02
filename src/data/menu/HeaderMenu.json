@@ -1,0 +1,30 @@
+[
+	{
+		"label": "Ultimele știri",
+		"path": "/categorie/azi-in-alexandria/"
+	},
+	{
+		"label": "Ghidul orașului",
+		"path": "/ghidul-orasului/"
+	},
+	{
+		"label": "Evenimente",
+		"path": "/evenimente/"
+	},
+	{
+		"label": "Trafic și transport",
+		"path": "/trafic-si-transport/"
+	},
+	{
+		"label": "Instituții",
+		"path": "/institutii/"
+	},
+	{
+		"label": "Locuri",
+		"path": "/locuri/"
+	},
+	{
+		"label": "Despre Alexandria",
+		"path": "/despre/"
+	}
+]
