@@ -43,6 +43,9 @@ if (process.env.VERCEL && process.env.VERCEL_ENV) {
 
 	// Build-only copies under lib/ (public/*.json stays for packaging).
 	rmIfExists(path.join(root, "lib", "postsIndex.json"), "lib/postsIndex.json");
+
+	// Free ~250MB git pack before Vercel "Deploying outputs" (ENOSPC).
+	rmIfExists(path.join(root, ".git"), ".git/");
 }
 
 fs.mkdirSync(cacheDir, { recursive: true });
