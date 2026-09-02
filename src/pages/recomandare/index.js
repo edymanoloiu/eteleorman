@@ -76,7 +76,7 @@ const RecomandareIndex = ({ postData, allPosts }) => {
 export default RecomandareIndex;
 
 export async function getServerSideProps() {
-	const allPostsRaw = getAllPosts([
+	const allPostsRaw = await getAllPosts([
 		"slug", "cate", "cate_img", "cate_bg", "title", "excerpt", "featureImg", "date", "post_views",
 		"read_time", "author_name", "author_social", "trending", "featureImgSrc", "tags",
 	]);

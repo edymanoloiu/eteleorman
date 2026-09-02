@@ -107,7 +107,7 @@ export async function getServerSideProps({ params, query }) {
 	const pageRaw = Number.parseInt(String(query.page || '1'), 10);
 	const page = Number.isFinite(pageRaw) && pageRaw > 0 ? pageRaw : 1;
 
-	const allPosts = getAllPosts([
+	const allPosts = await getAllPosts([
 		'slug',
 		'cate',
 		'cate_img',

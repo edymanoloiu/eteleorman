@@ -1,6 +1,6 @@
 import Script from 'next/script';
-import Link from 'next/link';
-import { getAllPosts, getPostBySlug } from "../../../lib/api";
+import { getAllPosts } from "../../../lib/postsList.js";
+import { getPostBySlug } from "../../../lib/postBody.js";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import HeadMeta from "../../components/elements/HeadMeta";
@@ -10,18 +10,13 @@ import HeaderOne from "../../components/header/HeaderOne";
 import PostFormatStandard from "../../components/post/post-format/PostFormatStandard";
 import PostFormatText from "../../components/post/post-format/PostFormatText";
 
-import PostLayoutTwo from "../../components/post/layout/PostLayoutTwo";
-import SectionTitle from "../../components/elements/SectionTitle";
+import PostSectionSix from "../../components/post/PostSectionSix";
 import { isRecomandarePost } from "../../../lib/recomandarePosts";
-import { getRelatedArticles } from "../../../lib/relatedArticles";
-import publication from "../../data/publication";
-import { slugify } from "../../utils";
-import { absoluteUrl, getCanonicalUrl } from "../../../lib/local-knowledge/seo";
 
-const PostDetails = ({ postContent, relatedPosts }) => {
-	const siteUrl = publication.canonicalDomain.replace(/\/$/, '');
+const PostDetails = ({ postContent, allPosts }) => {
+	const siteUrl = 'https://eteleorman.ro';
 	const toAbsoluteUrl = (value) => {
-		if (!value) return absoluteUrl(publication.logo || '/images/logo.png');
+		if (!value) return `${siteUrl}/images/logo.png`;
 		if (value.startsWith('http://') || value.startsWith('https://')) {
 			return value;
 		}
@@ -41,30 +36,21 @@ const PostDetails = ({ postContent, relatedPosts }) => {
 	const ogImageUrl = toAbsoluteUrl(postContent.featureImg);
 	const metaDescription = postContent.excerpt || toPlainText(postContent.content).slice(0, 200);
 	const publishedTime = toIsoDate(postContent.date);
-	const modifiedTime = toIsoDate(postContent.dateModified) || publishedTime;
-	const publisherName = publication.publicationName || publication.legalCompanyName || 'AziInReșița';
-	const publisherLogoUrl = toAbsoluteUrl(publication.logo || '/images/logo.png');
-	const categorySlug = postContent.cate ? slugify(postContent.cate) : publication.categorySlug;
-	const categoryUrl = getCanonicalUrl(`/categorie/${categorySlug}/`);
-	const authorName = postContent.author_name || null;
-
-	const articleJsonLd = {
+	const publisherLogoUrl = toAbsoluteUrl('/images/logo.png');
+	const publisherLabel = 'eteleorman.ro';
+	const jsonLd = {
 		'@context': 'https://schema.org',
-		'@type': 'NewsArticle',
+		'@type': 'Article',
 		headline: postContent.title,
 		image: [ogImageUrl],
-		...(publishedTime ? { datePublished: publishedTime } : {}),
-		...(modifiedTime ? { dateModified: modifiedTime } : {}),
+		...(publishedTime ? { datePublished: publishedTime, dateModified: publishedTime } : {}),
 		author: {
 			'@type': 'Person',
-			name: authorName || publisherName,
-			...(authorName
-				? { url: getCanonicalUrl(`/autor/${slugify(authorName)}/`) }
-				: {}),
+			name: postContent.author_name || publisherLabel,
 		},
 		publisher: {
 			'@type': 'Organization',
-			name: publisherName,
+			name: publisherLabel,
 			logo: {
 				'@type': 'ImageObject',
 				url: publisherLogoUrl,
@@ -75,52 +61,23 @@ const PostDetails = ({ postContent, relatedPosts }) => {
 			'@type': 'WebPage',
 			'@id': postUrl,
 		},
-		...(postContent.cate ? { articleSection: postContent.cate } : {}),
 	};
 
-	const breadcrumbJsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		itemListElement: [
-			{
-				'@type': 'ListItem',
-				position: 1,
-				name: 'Prima pagină',
-				item: `${siteUrl}/`,
-			},
-			...(postContent.cate
-				? [
-						{
-							'@type': 'ListItem',
-							position: 2,
-							name: postContent.cate,
-							item: categoryUrl,
-						},
-					]
-				: []),
-			{
-				'@type': 'ListItem',
-				position: postContent.cate ? 3 : 2,
-				name: postContent.title,
-				item: postUrl,
-			},
-		],
-	};
-
-	const jsonLd = [articleJsonLd, breadcrumbJsonLd];
-
-	const PostFormatHandler = () => {
+const PostFormatHandler = () => {
 		if (postContent.postFormat === 'text') {
-			return <PostFormatText postData={postContent} allData={relatedPosts} />;
+			return <PostFormatText postData={postContent} allData={allPosts} />
+		} else {
+			return <PostFormatStandard postData={postContent} allData={allPosts} />
 		}
-		return <PostFormatStandard postData={postContent} allData={relatedPosts} />;
-	};
+	}
 
 	return (
 		<>
-			{postContent.hasScript && postContent.hasOwnScript && (
-				<Script strategy="afterInteractive">{postContent.script}</Script>
-			)}
+			{postContent.hasScript && postContent.hasOwnScript &&
+				<Script strategy="afterInteractive">
+					{postContent.script}
+				</Script>
+			}
 			<HeadMeta
 				metaTitle={postContent.title}
 				metaDesc={metaDescription}
@@ -130,45 +87,18 @@ const PostDetails = ({ postContent, relatedPosts }) => {
 				ogType="article"
 				keywords={postContent.cate || undefined}
 				articlePublishedTime={publishedTime}
-				articleModifiedTime={modifiedTime}
+				articleModifiedTime={publishedTime}
 				articleSection={postContent.cate || undefined}
 				jsonLd={jsonLd}
 			/>
 			<HeaderOne />
 			<Breadcrumb bCat={postContent.cate} aPage={postContent.title} />
 			<PostFormatHandler />
-			{relatedPosts?.length > 0 ? (
-				<div className="related-news-wrapper section-gap p-t-xs-15 p-t-sm-60">
-					<div className="container">
-						<div className="row">
-							<div className="col-lg-8">
-								<SectionTitle
-									title="Articole asemănătoare"
-									pClass="m-b-xs-30"
-									btnText={postContent.cate || 'Toate știrile'}
-									btnUrl={`/categorie/${categorySlug}/`}
-								/>
-								<div className="axil-content">
-									{relatedPosts.map((data) => (
-										<PostLayoutTwo data={data} postSizeMd key={data.slug} />
-									))}
-								</div>
-								<p className="m-t-xs-30">
-									<Link href={`/categorie/${categorySlug}/`}>
-										Mai multe din {postContent.cate || 'această categorie'}
-									</Link>
-									{' · '}
-									<Link href="/stiri/">Arhiva de știri</Link>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			) : null}
+			<PostSectionSix postData={allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))} all={true} />
 			<FooterOne />
 		</>
 	);
-};
+}
 
 export default PostDetails;
 
@@ -185,7 +115,7 @@ export async function getStaticProps({ params }) {
 		return { notFound: true };
 	}
 
-	const post = getPostBySlug(params.slug, [
+	const post = await getPostBySlug(params.slug, [
 		'postFormat',
 		'title',
 		'quoteText',
@@ -194,7 +124,6 @@ export async function getStaticProps({ params }) {
 		'audioLink',
 		'gallery',
 		'date',
-		'dateModified',
 		'slug',
 		'cate',
 		'cate_bg',
@@ -210,9 +139,8 @@ export async function getStaticProps({ params }) {
 		'hasOwnScript',
 		'script',
 		'hasScript',
-		'isPromo',
-		'tags',
-	]);
+		'isPromo'
+	])
 	if (!post || !post.slug) {
 		return { notFound: true };
 	}
@@ -226,9 +154,9 @@ export async function getStaticProps({ params }) {
 		};
 	}
 
-	const content = await markdownToHtml(post.content || '');
+	const content = await markdownToHtml(post.content || '')
 
-	const candidatePool = getAllPosts([
+	const allPosts = (await getAllPosts([
 		'title',
 		'featureImg',
 		'featureImgSrc',
@@ -239,24 +167,18 @@ export async function getStaticProps({ params }) {
 		'cate_bg',
 		'cate_img',
 		'author_name',
-		'trending',
-		'tags',
-		'excerpt',
-	])
-		.filter((p) => p?.slug && !isRecomandarePost(p))
-		.sort((a, b) => new Date(b.date) - new Date(a.date))
-		.slice(0, 400);
-
-	const relatedPosts = getRelatedArticles(post, candidatePool, { limit: 5 });
+		'trending'
+	])).sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 150);
 
 	return {
 		props: {
 			postContent: {
 				...post,
-				content,
+				content
 			},
-			relatedPosts,
+			allPosts
 		},
 		revalidate: 300,
 	};
 }
+

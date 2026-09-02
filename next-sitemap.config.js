@@ -1,6 +1,3 @@
-const { getAllPosts } = require('./lib/api');
-const { isRecomandarePost } = require('./lib/recomandarePosts.js');
-
 const slugify = (text) => {
 	if (!text) return '';
 	return text
@@ -34,11 +31,13 @@ module.exports = {
 			loc: locPath,
 			changefreq: config.changefreq || 'daily',
 			priority: config.priority || 0.7,
-			lastmod: undefined,
+			lastmod: new Date().toISOString(),
 		};
 	},
 	additionalPaths: async () => {
-		const posts = getAllPosts(['slug', 'date', 'cate', 'author_name', 'tags']);
+		const { getAllPosts } = await import('./lib/api.js');
+		const { isRecomandarePost } = await import('./lib/recomandarePosts.js');
+		const posts = await getAllPosts(['slug', 'date', 'cate', 'author_name', 'tags']);
 		const seenCategories = new Set();
 		const seenAuthors = new Set();
 		const paths = [];
@@ -47,6 +46,7 @@ module.exports = {
 			loc: '/recomandare',
 			changefreq: 'weekly',
 			priority: 0.6,
+			lastmod: new Date().toISOString(),
 		});
 		posts.forEach((post) => {
 			if (post.slug) {
@@ -66,7 +66,7 @@ module.exports = {
 						loc: `/categorie/${categorySlug}`,
 						changefreq: 'weekly',
 						priority: 0.7,
-						lastmod: safeIsoDate(post.date),
+						lastmod: new Date().toISOString(),
 					});
 				}
 			}
@@ -79,6 +79,7 @@ module.exports = {
 						loc: `/autor/${authorSlug}`,
 						changefreq: 'weekly',
 						priority: 0.6,
+						lastmod: new Date().toISOString(),
 					});
 				}
 			}

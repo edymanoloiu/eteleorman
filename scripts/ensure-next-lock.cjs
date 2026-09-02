@@ -2,8 +2,10 @@
 // Next.js 16 removes the lock on clean exit; Vercel's builder still lstats it
 // and fails with ENOENT if it's missing.
 //
-// Safe on Vercel: drop only .next/cache/* (hundreds of MB). Do NOT delete posts/
-// or public/_evergreen — those paths stay in server NFT traces until packaging ends.
+// On Vercel, free disk before "Deploying outputs" (ENOSPC). Only remove paths
+// that are NOT re-read from disk during packaging — deleting public/ images or
+// JSON after build produced empty deploy artifacts. posts/ markdown and
+// generated mirrors under public/_* are safe once JSON indexes exist.
 const fs = require("fs");
 const path = require("path");
 
@@ -25,10 +27,22 @@ if (!fs.existsSync(nextDir)) {
 	process.exit(0);
 }
 
-if (process.env.VERCEL && process.env.VERCEL_ENV && fs.existsSync(cacheDir)) {
-	for (const name of ["webpack", "swc", "eslint", "images"]) {
-		rmIfExists(path.join(cacheDir, name), `.next/cache/${name}`);
+// Require VERCEL_ENV so a local VERCEL=1 experiment cannot wipe the tree.
+if (process.env.VERCEL && process.env.VERCEL_ENV) {
+	if (fs.existsSync(cacheDir)) {
+		for (const name of ["webpack", "swc", "eslint", "images"]) {
+			rmIfExists(path.join(cacheDir, name), `.next/cache/${name}`);
+		}
 	}
+
+	// Markdown already baked into posts-*.json during prebuild (~40MB).
+	rmIfExists(path.join(root, "posts"), "posts/");
+	// Generated mirrors — static JSON/CDN assets already in /vercel/output.
+	rmIfExists(path.join(root, "public", "_posts"), "public/_posts/");
+	rmIfExists(path.join(root, "public", "_evergreen"), "public/_evergreen/");
+
+	// Build-only copies under lib/ (public/*.json stays for packaging).
+	rmIfExists(path.join(root, "lib", "postsIndex.json"), "lib/postsIndex.json");
 }
 
 fs.mkdirSync(cacheDir, { recursive: true });
