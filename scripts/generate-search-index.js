@@ -28,11 +28,22 @@ function loadPublication() {
 const pub = loadPublication();
 const entries = [];
 
-const indexPath = path.join(ROOT, 'public/posts-index.json');
+const indexCandidates = [
+	path.join(ROOT, 'lib/postsIndex.json'),
+	path.join(ROOT, 'public/posts-index.json'),
+];
 let posts = [];
-if (fs.existsSync(indexPath)) {
-	posts = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
-} else {
+for (const indexPath of indexCandidates) {
+	if (!fs.existsSync(indexPath)) continue;
+	const raw = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+	if (Array.isArray(raw)) {
+		posts = raw;
+	} else if (raw && typeof raw === 'object') {
+		posts = Object.entries(raw).map(([slug, data]) => ({ slug, ...(data || {}) }));
+	}
+	break;
+}
+if (!posts.length) {
 	const postsDir = path.join(ROOT, 'posts');
 	if (fs.existsSync(postsDir)) {
 		posts = fs.readdirSync(postsDir).filter((f) => f.endsWith('.md')).map((f) => {
@@ -43,12 +54,9 @@ if (fs.existsSync(indexPath)) {
 	}
 }
 
+// Section heuristic — mirror articleRoutes loosely
 function newsPath(post) {
-	const tags = post.tags || [];
-	const isPromo =
-		post.isPromo === true ||
-		(Array.isArray(tags) && tags.some((t) => String(t).toLowerCase() === 'recomandare'));
-	return isPromo ? `/recomandare/${post.slug}/` : `/post/${post.slug}/`;
+	return `/stiri/${post.slug}/`;
 }
 
 for (const post of posts) {
