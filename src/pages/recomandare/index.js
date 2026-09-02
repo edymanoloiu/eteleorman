@@ -9,7 +9,7 @@ import WidgetPost from "../../components/widget/WidgetPost";
 import PostLayoutTwo from "../../components/post/layout/PostLayoutTwo";
 
 const PAGE_TITLE = "Recomandări";
-const SITE_URL = "https://eteleorman.ro";
+import publication from "../../data/publication";
 
 const RecomandareIndex = ({ postData, allPosts }) => {
 	const metaDesc =
@@ -17,9 +17,9 @@ const RecomandareIndex = ({ postData, allPosts }) => {
 	return (
 		<>
 			<HeadMeta
-				metaTitle={`${PAGE_TITLE} | eteleorman.ro`}
+				metaTitle={PAGE_TITLE}
 				metaDesc={metaDesc}
-				ogUrl={`${SITE_URL}/recomandare/`}
+				ogUrl={`${publication.canonicalDomain.replace(/\/$/, "")}/recomandare/`}
 			/>
 			<HeaderOne />
 			<Breadcrumb aPage={PAGE_TITLE} />

@@ -4,7 +4,9 @@ import publication from '../../data/publication'
 import { absoluteUrl, getCanonicalUrl, robotsDirective } from '../../../lib/local-knowledge/seo'
 
 const SITE_URL = publication.canonicalDomain.replace(/\/$/, '')
-const SITE_NAME = publication.publicationTagline || publication.publicationName
+const SEO = publication.seo || {}
+const BRAND = publication.publicationName
+const TITLE_TEMPLATE = SEO.titleTemplate || `%s | ${BRAND}`
 const DEFAULT_OG_IMAGE = absoluteUrl(publication.defaultSocialImage || publication.logo)
 
 const toAbsoluteUrl = (value) => {
@@ -12,12 +14,18 @@ const toAbsoluteUrl = (value) => {
 	return absoluteUrl(value)
 }
 
+const formatTitle = (pageTitle) => TITLE_TEMPLATE.replace('%s', pageTitle)
+
 const HeadMeta = ({
 	metaTitle,
 	metaDesc,
 	metaImg,
 	ogUrl,
 	ogType,
+	ogTitle,
+	ogDescription,
+	twitterTitle,
+	twitterDescription,
 	canonicalUrl,
 	keywords,
 	articlePublishedTime,
@@ -31,18 +39,25 @@ const HeadMeta = ({
 	const title = fullPageTitle
 		? fullPageTitle
 		: metaTitle
-			? `${metaTitle} | ${SITE_NAME}`
-			: `${SITE_NAME} | Informații locale din ${publication.city}`
+			? formatTitle(metaTitle)
+			: SEO.title || `${BRAND} | Informații locale din ${publication.city}`
 	const description =
 		metaDesc ||
-		`${SITE_NAME} — știri locale, ghiduri și informații utile din ${publication.city}.`
+		SEO.description ||
+		`${publication.publicationTagline} — știri locale din ${publication.city}.`
+	const resolvedOgTitle = ogTitle || title
+	const resolvedOgDescription = ogDescription || description
+	const resolvedTwitterTitle = twitterTitle || resolvedOgTitle
+	const resolvedTwitterDescription = twitterDescription || resolvedOgDescription
+	const ogSiteName = SEO.openGraph?.siteName || BRAND
 	const image = toAbsoluteUrl(metaImg)
 	const router = useRouter()
 	const routePath = router.asPath ? router.asPath.split('#')[0].split('?')[0] : '/'
 	const effectiveCanonical = canonicalUrl || ogUrl || getCanonicalUrl(routePath)
 	const resolvedOgUrl = ogUrl || effectiveCanonical
-	const resolvedOgType = ogType || 'website'
+	const resolvedOgType = ogType || SEO.openGraph?.type || 'website'
 	const robotsContent = robots || robotsDirective()
+	const twitterCard = SEO.twitter?.card || 'summary_large_image'
 
 	const jsonLdString = (() => {
 		if (!jsonLd) return null
@@ -71,15 +86,15 @@ const HeadMeta = ({
 			<meta name="robots" content={robotsContent} />
 			<link rel="canonical" href={effectiveCanonical} key="canonical" />
 
-			<meta property="og:title" content={title} />
-			<meta property="og:description" content={description} />
+			<meta property="og:title" content={resolvedOgTitle} />
+			<meta property="og:description" content={resolvedOgDescription} />
 			<meta property="og:image" content={image} />
 			<meta property="og:image:width" content="1200" />
 			<meta property="og:image:height" content="630" />
 			<meta property="og:type" content={resolvedOgType} />
 			<meta property="og:url" content={resolvedOgUrl} />
-			<meta property="og:site_name" content={SITE_NAME} />
-			<meta property="og:locale" content={publication.ogLocale || 'ro_RO'} />
+			<meta property="og:site_name" content={ogSiteName} />
+			<meta property="og:locale" content={SEO.openGraph?.locale || publication.ogLocale || 'ro_RO'} />
 			{keywords ? <meta name="keywords" content={keywords} /> : null}
 			{articlePublishedTime ? (
 				<meta property="article:published_time" content={articlePublishedTime} />
@@ -92,9 +107,9 @@ const HeadMeta = ({
 			<meta name="ai-content" content={resolvedOgType === 'article' ? 'ai-assisted; human-reviewed' : 'not-applicable'} />
 			<meta name="ai-image" content="generated-or-stock-or-own" />
 			<meta name="editorial-responsibility" content={publication.legalCompanyName} />
-			<meta name="twitter:card" content="summary_large_image" />
-			<meta name="twitter:title" content={title} />
-			<meta name="twitter:description" content={description} />
+			<meta name="twitter:card" content={twitterCard} />
+			<meta name="twitter:title" content={resolvedTwitterTitle} />
+			<meta name="twitter:description" content={resolvedTwitterDescription} />
 			<meta name="twitter:image" content={image} />
 			{jsonLdString ? (
 				<script
@@ -107,7 +122,7 @@ const HeadMeta = ({
 			<link
 				rel="alternate"
 				type="application/rss+xml"
-				title={`${SITE_NAME} RSS`}
+				title={`${BRAND} RSS`}
 				href={`${SITE_URL}/rss.xml`}
 				key="rss-alternate"
 			/>

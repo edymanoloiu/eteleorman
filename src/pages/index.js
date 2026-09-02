@@ -6,6 +6,7 @@ import HeadMeta from "../components/elements/HeadMeta";
 import FooterOne from "../components/footer/FooterOne";
 import HeaderOne from "../components/header/HeaderOne";
 import SoledadNewsHub from "../components/soledad/SoledadNewsHub";
+import publication from "../data/publication";
 import site from "../data/soledadSite";
 
 const HomeOne = ({ allPosts, sitemaps }) => {
@@ -19,7 +20,14 @@ const HomeOne = ({ allPosts, sitemaps }) => {
 
 	return (
 		<>
-			<HeadMeta metaTitle={site.metaTitle} />
+			<HeadMeta
+				fullPageTitle={publication.seo.title}
+				metaDesc={publication.seo.description}
+				ogTitle={publication.seo.openGraph.title}
+				ogDescription={publication.seo.openGraph.description}
+				twitterTitle={publication.seo.twitter.title}
+				twitterDescription={publication.seo.twitter.description}
+			/>
 			<HeaderOne />
 			<SoledadNewsHub
 				localPosts={localPosts}

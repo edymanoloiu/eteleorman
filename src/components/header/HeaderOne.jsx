@@ -4,6 +4,7 @@ import Image from "next/image";
 import { dateFormate } from "../../utils";
 import SocialLink from "../../data/social/SocialLink.json";
 import MenuData from "../../data/menu/HeaderMenu.json";
+import publication from "../../data/publication";
 import OffcanvasMenu from "./OffcanvasMenu";
 
 const HeaderOne = () => {
@@ -143,8 +144,8 @@ const HeaderOne = () => {
 								<Link href="/">
 									
 										<Image
-											src="/images/cropped_image.png"
-											alt="brand-logo"
+											src={publication.favicon || "/images/cropped_image.png"}
+											alt={publication.publicationName}
 											width={56}
 											height={56}
 										/>

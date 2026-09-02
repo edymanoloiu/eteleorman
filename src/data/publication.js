@@ -5,7 +5,7 @@
 
 const publication = {
 	publicationName: "eTeleorman",
-	publicationTagline: "Știrile zilei în Alexandria",
+	publicationTagline: "Teleormanul de azi",
 	canonicalDomain: "https://eteleorman.ro",
 	city: "Alexandria",
 	county: "Teleorman",
@@ -27,8 +27,10 @@ const publication = {
 	},
 	socialProfiles: [],
 	foundingDate: '2024-01-01',
-	coverageArea: "Municipiul Alexandria și județul Teleorman",
-	nearbyLocalities: [],
+	coverageArea: "Județul Teleorman, România",
+	editorialPositioning:
+		"Publicație județeană axată pe viața reală din Teleorman, de la administrație și infrastructură până la agricultură și comunitățile locale.",
+	nearbyLocalities: ["Roșiorii de Vede", "Turnu Măgurele", "Videle", "Zimnicea"],
 	mapProvider: 'openstreetmap',
 	mapsEnabled: true,
 	environment: process.env.NODE_ENV === 'production' ? 'production' : 'development',
@@ -38,6 +40,35 @@ const publication = {
 	tagMinIndexCount: 5,
 	correctionEmail: 'contact@weboratory.ro',
 	ogLocale: 'ro_RO',
+	seo: {
+		title: "eTeleorman - Știri din Teleorman și Alexandria",
+		titleTemplate: "%s | eTeleorman",
+		description:
+			"Știri din Teleorman, Alexandria, Roșiorii de Vede, Turnu Măgurele și Videle. Actualitate locală, administrație, evenimente, agricultură, trafic și comunitate.",
+		homepageH1: "Știri din Teleorman",
+		homepageIntro:
+			"Informații locale din Alexandria și întreg județul Teleorman, de la administrație și infrastructură până la agricultură, economie și evenimente.",
+		openGraph: {
+			type: "website",
+			siteName: "eTeleorman",
+			title: "eTeleorman - Actualitatea județului Teleorman",
+			description:
+				"Știri și informații din Alexandria, Roșiorii de Vede, Turnu Măgurele, Videle și toate comunitățile din Teleorman.",
+			locale: "ro_RO",
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: "eTeleorman - Știri din Teleorman",
+			description:
+				"Actualitate, administrație, agricultură, evenimente și informații utile din județul Teleorman.",
+		},
+		schema: {
+			type: "NewsMediaOrganization",
+			name: "eTeleorman",
+			alternateName: "eTeleorman.ro",
+			areaServed: "Județul Teleorman, România",
+		},
+	},
 };
 
 export default publication;

@@ -12,7 +12,7 @@
     "start": "next start",
     "export": "npm run build && next export",
     "lint": "next lint",
-    "postbuild": "npm run generate:rss",
+    "postbuild": "npm run generate:rss && node scripts/ensure-next-lock.cjs",
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
     "deploy": "npm run pages:build && wrangler pages deploy",
