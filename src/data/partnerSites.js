@@ -101,6 +101,7 @@ const partnerSites = [
 			{ url: "https://efocsani.ro/", label: "eFocșani - Știri locale Focșani" },
 			{ url: "https://aziinilfov.ro/", label: "Știrile zilei în Ilfov - Știri locale Ilfov" },
 			{ url: "https://eotopeni.ro/", label: "eOtopeni - Tot ce contează, azi, în Otopeni." },
+			{ url: "https://ilfovul.ro/", label: "Știri locale din județul Ilfov" },
 			{ url: "https://banivorbesc.ro/", label: "Banii Vorbesc - Educație financiară" },
 			{ url: "https://sfaturipentruparinti.ro/", label: "Sfaturi pentru părinți si copii fericiți" },
 			{ url: "https://sfaturidesanatate.ro/", label: "Sfaturi pentru o viață mai sănătoasă" },
