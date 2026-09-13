@@ -23,24 +23,50 @@ tags:
 
 ![Spital urgențe Turnu Măgurele](/images/posts/spital-urgente-turnu-magurele.webp)
 
-# Spital urgențe Turnu Măgurele
+# Spital urgențe Turnu Măgurele: adresă, telefon și serviciul disponibil
 
-**Răspuns rapid:** Urgențele din **Turnu Măgurele** se prezintă la **Spitalul Municipal Turnu Măgurele** e listat în rețeaua județeană. Confirmă adresa înainte să pleci.. Dacă unitatea locală redirecționează: SJU Alexandria, strada Libertății nr. 1, 0247 306 711. **112**.
+**Răspuns rapid:** Spitalul Municipal Turnu Măgurele asigură urgențe medico-chirurgicale prin camerele de gardă de medicină internă și chirurgie generală, la Strada Castanilor nr. 42. Telefon: **0247 416 646**. Pentru risc vital, sună la **112**.
 
-## Ce nu e UPU
+**Actualizat: 13 septembrie 2026.**
 
-Ambulatoriul de luni–vineri și alte pavilioane (boli infecțioase, oncologie, TBC) nu înlocuiesc camera de gardă. Duminică, 13 septembrie 2026, te prezinți la UPU sau apelezi 112.
+| Unitate | Adresă | Telefon | Program | Servicii relevante | Website |
+|---|---|---|---|---|---|
+| Spitalul Municipal Turnu Măgurele – camere de gardă | Str. Castanilor nr. 42, Turnu Măgurele | 0247 416 646 | permanență pentru urgențe | urgențe medico-chirurgicale în medicină internă și chirurgie generală | [site oficial](https://spitalturnumagurele.ro/) |
+
+## Ce trebuie să știi înainte de prezentare
+
+Unitatea nu trebuie descrisă ca UPU județeană. Ministerul Sănătății confirmă camerele de gardă pentru medicină internă și chirurgie generală; cazurile care depășesc competența locală pot fi transferate.
+
+## Când suni la 112
+
+Apelează 112 pentru pierderea stării de conștiență, dificultăți mari de respirație, durere toracică severă, semne de AVC, convulsii, hemoragie importantă sau traumatism major. Nu transporta cu mașina personală un pacient instabil.
+
+## Cum am verificat informațiile
+
+Adresa și telefonul au fost confruntate între site-ul spitalului și documentele instituționale. Descrierea camerelor de gardă provine din pagina Ministerului Sănătății.
 
 ## Întrebări frecvente
 
-### Unde e UPU?
+### Unde se află serviciul local pentru urgențe?
 
-SJU Alexandria, strada Libertății nr. 1, 0247 306 711
+La Str. Castanilor nr. 42, Turnu Măgurele.
 
-### E deschis azi?
+### Care este telefonul publicat?
 
-UPU da, unde există linie de urgență.
+0247 416 646.
+
+### Pacienții sunt consultați în ordinea sosirii?
+
+Nu neapărat. Prioritatea se stabilește prin triaj, în funcție de gravitate.
+
+### Când este mai sigur să sun la 112?
+
+Când simptomele pot pune viața în pericol sau transportul privat poate agrava starea pacientului.
 
 ## Surse
 
-- [MS — SJU Alexandria (unități județ)](https://www.ms.ro/ro/unitati-sanitare/spitalul-jude%C8%9Bean-de-urgen%C8%9B%C4%83-alexandria/)
+- [Spitalul Municipal Turnu Măgurele – site oficial](https://spitalturnumagurele.ro/)
+- [Ministerul Sănătății – Spitalul Municipal Turnu Măgurele](https://www.ms.ro/ro/unitati-sanitare/spitalul-municipal-turnu-m%C4%83gurele/)
+- [STS – Serviciul de urgență 112](https://www.sts.ro/ro/serviciul-112)
+
+> **Important:** datele de contact și circuitele se pot modifica. Pentru o posibilă urgență majoră, sună imediat la 112.

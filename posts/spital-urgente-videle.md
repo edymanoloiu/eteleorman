@@ -23,24 +23,50 @@ tags:
 
 ![Spital urgențe Videle](/images/posts/spital-urgente-videle.webp)
 
-# Spital urgențe Videle
+# Spital urgențe Videle: adresă, telefon și serviciul disponibil
 
-**Răspuns rapid:** Urgențele din **Videle** se prezintă la **UPU Videle (punct de lucru SJU Alexandria)**, **șoseaua Giurgiului**, telefon **0247 306 711**. Dacă unitatea locală redirecționează: SJU Alexandria, strada Libertății nr. 1, dacă punctul din Videle redirecționează. **112**.
+**Răspuns rapid:** În Videle funcționează un punct de lucru UPU al Spitalului Județean de Urgență Alexandria, pe Șoseaua Giurgiului. Pentru confirmarea accesului poți suna la centrala SJU, **0247 306 711**; pentru risc vital, sună direct la **112**.
 
-## Ce nu e UPU
+**Actualizat: 13 septembrie 2026.**
 
-Ambulatoriul de luni–vineri și alte pavilioane (boli infecțioase, oncologie, TBC) nu înlocuiesc camera de gardă. Duminică, 13 septembrie 2026, te prezinți la UPU sau apelezi 112.
+| Unitate | Adresă | Telefon | Program | Servicii relevante | Website |
+|---|---|---|---|---|---|
+| SJU Alexandria – punct de lucru UPU Videle | Șoseaua Giurgiului, Videle | 0247 306 711 (centrala SJU Alexandria) | permanență pentru urgențe | primire și evaluare a urgențelor, cu transfer când nivelul cazului o impune | [site oficial](https://spitalulalexandria.ro/prezentare-spital/prezentare) |
+
+## Ce trebuie să știi înainte de prezentare
+
+Numărul publicat este centrala spitalului județean, nu un număr direct atribuit punctului din Videle. Pentru o urgență gravă nu amâna apelul la 112 ca să verifici telefonic programul.
+
+## Când suni la 112
+
+Apelează 112 pentru pierderea stării de conștiență, dificultăți mari de respirație, durere toracică severă, semne de AVC, convulsii, hemoragie importantă sau traumatism major. Nu transporta cu mașina personală un pacient instabil.
+
+## Cum am verificat informațiile
+
+Pagina oficială de prezentare a SJU Alexandria confirmă punctul de lucru UPU Videle și localizarea pe Șoseaua Giurgiului. Pagina de contact publică centrala instituției.
 
 ## Întrebări frecvente
 
-### Unde e UPU?
+### Unde se află serviciul local pentru urgențe?
 
-șoseaua Giurgiului
+La Șoseaua Giurgiului, Videle.
 
-### E deschis azi?
+### Care este telefonul publicat?
 
-UPU da, unde există linie de urgență.
+0247 306 711 (centrala SJU Alexandria).
+
+### Pacienții sunt consultați în ordinea sosirii?
+
+Nu neapărat. Prioritatea se stabilește prin triaj, în funcție de gravitate.
+
+### Când este mai sigur să sun la 112?
+
+Când simptomele pot pune viața în pericol sau transportul privat poate agrava starea pacientului.
 
 ## Surse
 
-- [SJU Alexandria — prezentare (UPU Videle)](https://spitalulalexandria.ro/prezentare-spital/prezentare)
+- [SJU Alexandria – prezentare și punctul UPU Videle](https://spitalulalexandria.ro/prezentare-spital/prezentare)
+- [SJU Alexandria – contact](https://www.spitalulalexandria.ro/contact/)
+- [STS – Serviciul de urgență 112](https://www.sts.ro/ro/serviciul-112)
+
+> **Important:** datele de contact și circuitele se pot modifica. Pentru o posibilă urgență majoră, sună imediat la 112.

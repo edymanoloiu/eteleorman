@@ -23,24 +23,50 @@ tags:
 
 ![Spital urgențe Roșiorii de Vede](/images/posts/spital-urgente-rosiorii-de-vede.webp)
 
-# Spital urgențe Roșiorii de Vede
+# Spital urgențe Roșiorii de Vede: adresă, telefon și serviciul disponibil
 
-**Răspuns rapid:** Urgențele din **Roșiorii de Vede** se prezintă la **Spitalul Municipal Caritas**, **strada Carpați nr. 33**, telefon **0247 466 330**. Dacă unitatea locală redirecționează: SJU Alexandria, strada Libertății nr. 1, 0247 306 711. **112**.
+**Răspuns rapid:** Spitalul Municipal „Caritas” are Compartiment de Primiri Urgențe pe Strada Carpați nr. 33. Telefon direct CPU: **0787 300 992**; centrală: **0247 466 330** sau **0347 412 546**. Pentru risc vital, sună la **112**.
 
-## Ce nu e UPU
+**Actualizat: 13 septembrie 2026.**
 
-Ambulatoriul de luni–vineri și alte pavilioane (boli infecțioase, oncologie, TBC) nu înlocuiesc camera de gardă. Duminică, 13 septembrie 2026, te prezinți la UPU sau apelezi 112.
+| Unitate | Adresă | Telefon | Program | Servicii relevante | Website |
+|---|---|---|---|---|---|
+| Spitalul Municipal „Caritas” – CPU | Str. Carpați nr. 33, Roșiorii de Vede | 0787 300 992; centrală 0247 466 330 / 0347 412 546 | permanență pentru urgențe | primire, evaluare și stabilizare a urgențelor în limita competenței spitalului | [site oficial](https://caritas.hospital/) |
+
+## Ce trebuie să știi înainte de prezentare
+
+Site-ul spitalului listează explicit Compartimentul de Primiri Urgențe și afișează separat numărul direct CPU. Pentru informații administrative sau legătura cu o secție se poate folosi centrala.
+
+## Când suni la 112
+
+Apelează 112 pentru pierderea stării de conștiență, dificultăți mari de respirație, durere toracică severă, semne de AVC, convulsii, hemoragie importantă sau traumatism major. Nu transporta cu mașina personală un pacient instabil.
+
+## Cum am verificat informațiile
+
+Am folosit site-ul oficial al spitalului pentru existența CPU, adresă și telefoane. Nu am folosit directoare comerciale pentru a atribui program sau servicii.
 
 ## Întrebări frecvente
 
-### Unde e UPU?
+### Unde se află serviciul local pentru urgențe?
 
-strada Carpați nr. 33
+La Str. Carpați nr. 33, Roșiorii de Vede.
 
-### E deschis azi?
+### Care este telefonul publicat?
 
-UPU da, unde există linie de urgență.
+0787 300 992; centrală 0247 466 330 / 0347 412 546.
+
+### Pacienții sunt consultați în ordinea sosirii?
+
+Nu neapărat. Prioritatea se stabilește prin triaj, în funcție de gravitate.
+
+### Când este mai sigur să sun la 112?
+
+Când simptomele pot pune viața în pericol sau transportul privat poate agrava starea pacientului.
 
 ## Surse
 
-- [MS — Spitalul Municipal Caritas](https://www.ms.ro/ro/unitati-sanitare/spitalul-municipal-caritas/)
+- [Spitalul Municipal Caritas – site oficial](https://caritas.hospital/)
+- [Spitalul Municipal Caritas – contact și proiect](https://caritas.hospital/index.php/2024/11/05/comunicat-de-presa-dotarea-spitalului-municipal-caritas/)
+- [STS – Serviciul de urgență 112](https://www.sts.ro/ro/serviciul-112)
+
+> **Important:** datele de contact și circuitele se pot modifica. Pentru o posibilă urgență majoră, sună imediat la 112.

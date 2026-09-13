@@ -23,24 +23,50 @@ tags:
 
 ![Spital urgențe Zimnicea](/images/posts/spital-urgente-zimnicea.webp)
 
-# Spital urgențe Zimnicea
+# Spital urgențe Zimnicea: adresă, telefon și serviciul disponibil
 
-**Răspuns rapid:** Urgențele din **Zimnicea** se prezintă la **Spitalul Orășenesc Zimnicea** e listat în rețeaua județeană. Confirmă adresa înainte să pleci.. Dacă unitatea locală redirecționează: SJU Alexandria, strada Libertății nr. 1. **112**.
+**Răspuns rapid:** Spitalul Orășenesc Zimnicea funcționează 24 de ore pe zi și asigură două linii de gardă, pentru interne–pediatrie și chirurgie–obstetrică-ginecologie, la Strada Împăratul Traian nr. 68–72. Telefon: **0247 366 995**. Pentru risc vital, sună la **112**.
 
-## Ce nu e UPU
+**Actualizat: 13 septembrie 2026.**
 
-Ambulatoriul de luni–vineri și alte pavilioane (boli infecțioase, oncologie, TBC) nu înlocuiesc camera de gardă. Duminică, 13 septembrie 2026, te prezinți la UPU sau apelezi 112.
+| Unitate | Adresă | Telefon | Program | Servicii relevante | Website |
+|---|---|---|---|---|---|
+| Spitalul Orășenesc Zimnicea – camere de gardă | Str. Împăratul Traian nr. 68–72, Zimnicea | 0247 366 995 | permanență pentru urgențe | evaluare prin liniile de gardă interne–pediatrie și chirurgie–obstetrică-ginecologie | [site oficial](https://www.ms.ro/ro/unitati-sanitare/spitalul-or%C4%83%C8%99enesc-zimnicea/) |
+
+## Ce trebuie să știi înainte de prezentare
+
+Spitalul este o unitate locală de categoria a IV-a, nu UPU județeană. În funcție de gravitate și de specialitatea necesară, pacientul poate fi stabilizat și transferat către o unitate cu nivel superior.
+
+## Când suni la 112
+
+Apelează 112 pentru pierderea stării de conștiență, dificultăți mari de respirație, durere toracică severă, semne de AVC, convulsii, hemoragie importantă sau traumatism major. Nu transporta cu mașina personală un pacient instabil.
+
+## Cum am verificat informațiile
+
+Pagina Ministerului Sănătății confirmă adresa, telefonul, funcționarea 24 de ore și cele două linii de gardă. Prezentarea DSP Teleorman descrie de asemenea camerele de gardă.
 
 ## Întrebări frecvente
 
-### Unde e UPU?
+### Unde se află serviciul local pentru urgențe?
 
-SJU Alexandria, strada Libertății nr. 1
+La Str. Împăratul Traian nr. 68–72, Zimnicea.
 
-### E deschis azi?
+### Care este telefonul publicat?
 
-UPU da, unde există linie de urgență.
+0247 366 995.
+
+### Pacienții sunt consultați în ordinea sosirii?
+
+Nu neapărat. Prioritatea se stabilește prin triaj, în funcție de gravitate.
+
+### Când este mai sigur să sun la 112?
+
+Când simptomele pot pune viața în pericol sau transportul privat poate agrava starea pacientului.
 
 ## Surse
 
-- [MS — unități Teleorman](https://www.ms.ro/ro/unitati-sanitare/spitalul-jude%C8%9Bean-de-urgen%C8%9B%C4%83-alexandria/)
+- [Ministerul Sănătății – Spitalul Orășenesc Zimnicea](https://www.ms.ro/ro/unitati-sanitare/spitalul-or%C4%83%C8%99enesc-zimnicea/)
+- [DSP Teleorman – prezentarea Spitalului Zimnicea](https://www.dsptr.ro/pdfs/prezentare_zimnicea.pdf)
+- [STS – Serviciul de urgență 112](https://www.sts.ro/ro/serviciul-112)
+
+> **Important:** datele de contact și circuitele se pot modifica. Pentru o posibilă urgență majoră, sună imediat la 112.

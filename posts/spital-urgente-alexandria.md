@@ -23,26 +23,62 @@ tags:
 
 ![Spital urgențe Alexandria](/images/posts/spital-urgente-alexandria.webp)
 
-# Spital urgențe Alexandria
+# Spital urgențe Alexandria: UPU–SMURD, adresă și telefoane
 
-**Răspuns rapid:** Urgențele din **Alexandria** se prezintă la **Spitalul Județean de Urgență Alexandria**, **strada Libertății nr. 1**, telefon **0247 306 711**. UPU–SMURD e la sediul principal. Alte locații SJU (Oncologie Mihăiță Filipescu 12–14, Boli infecțioase Alexandru Ghica 107) nu sunt UPU. Există punct de lucru UPU Videle, șoseaua Giurgiului. secretariat@spitalulalexandria.ro. **112**.
+UPU–SMURD Alexandria funcționează la sediul principal al Spitalului Județean de Urgență, pe strada Libertății nr. 1. Centrala spitalului este 0247 306 711, iar pentru registratura UPU este publicat numărul 0247 306 778.
 
-## Ce nu e UPU
+**Actualizat: 13 septembrie 2026**
 
-Ambulatoriul de luni–vineri și alte pavilioane (boli infecțioase, oncologie, TBC) nu înlocuiesc camera de gardă. Duminică, 13 septembrie 2026, te prezinți la UPU sau apelezi 112.
+> Datele de contact și organizarea liniilor de gardă se pot modifica. Pentru o urgență gravă sau dacă pacientul nu poate fi transportat în siguranță, sună la 112.
+
+## Spitale și servicii de urgență în Alexandria
+
+| Unitate | Adresă | Telefon | Serviciu relevant |
+| --- | --- | --- | --- |
+| SJU Alexandria – UPU–SMURD | Strada Libertății nr. 1, Alexandria | Centrală: 0247 306 711; registratura UPU: 0247 306 778 | Prim ajutor și asistență medicală pentru pacienți în stare critică |
+
+## Detalii despre locație
+
+### Unitatea de Primiri Urgențe Alexandria
+
+- **Adresă:** Strada Libertății nr. 1, Alexandria, județul Teleorman
+- **Telefon centrală:** 0247 306 711
+- **Registratura UPU:** 0247 306 778
+- **Birou internări:** 0247 306 773
+- **Program:** serviciu de primiri urgențe, distinct de programul ambulatoriului
+- **Website:** [spitalulalexandria.ro](https://spitalulalexandria.ro/contact/)
+- **Servicii relevante:** UPU–SMURD și linii de gardă în specialitățile publicate de spital
+
+UPU se află la parterul corpului A din sediul de pe strada Libertății. Secțiile de oncologie și recuperare de pe strada Mihăiță Filipescu, secția de boli infecțioase de pe strada Alexandru Ghica și ambulatoriul nu sunt intrări alternative pentru UPU.
+
+## Când suni la 112
+
+Apelează 112 pentru pierderea stării de conștiență, dificultăți de respirație, durere toracică severă, semne de AVC, hemoragie sau traumatisme grave. Nu transporta cu mașina personală un pacient instabil.
+
+## Cum am verificat informațiile
+
+Adresa, centrala și registratura UPU sunt publicate în pagina oficială de contact a spitalului. Structura UPU și liniile de gardă sunt descrise de SJU Alexandria și de Ministerul Sănătății.
 
 ## Întrebări frecvente
 
-### Unde e UPU?
+### Unde se află UPU Alexandria?
 
-strada Libertății nr. 1
+La sediul principal al Spitalului Județean de Urgență, strada Libertății nr. 1.
 
-### E deschis azi?
+### Care este telefonul UPU Alexandria?
 
-UPU da, unde există linie de urgență.
+Registratura UPU poate fi apelată la 0247 306 778. Centrala spitalului este 0247 306 711.
+
+### Ambulatoriul este același lucru cu UPU?
+
+Nu. Ambulatoriul deservește consultații programate; UPU primește urgențe medicale.
+
+### Ce servicii de gardă are spitalul?
+
+Spitalul publică linii de gardă pentru UPU, ATI, chirurgie, medicină internă, pediatrie, neurologie, ortopedie-traumatologie, obstetrică-ginecologie și alte specialități.
 
 ## Surse
 
-- [SJU Alexandria — contact](https://www.spitalulalexandria.ro/contact)
-- [SJU Alexandria — prezentare](https://spitalulalexandria.ro/prezentare-spital/prezentare)
-- [MS — SJU Alexandria](https://www.ms.ro/ro/unitati-sanitare/spitalul-jude%C8%9Bean-de-urgen%C8%9B%C4%83-alexandria/)
+- [SJU Alexandria – contact](https://spitalulalexandria.ro/contact/)
+- [SJU Alexandria – prezentarea structurii](https://spitalulalexandria.ro/prezentare-spital/prezentare)
+- [Ministerul Sănătății – SJU Alexandria](https://www.ms.ro/ro/unitati-sanitare/spitalul-jude%C8%9Bean-de-urgen%C8%9B%C4%83-alexandria/)
