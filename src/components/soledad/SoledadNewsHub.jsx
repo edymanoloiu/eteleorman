@@ -127,10 +127,7 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 	let lifestyleFeatured = takeUniquePosts(localCity, 1, usedSlugs, promoPriority())[0];
 	let lifestyleLinks = takeUniquePosts(localCity, 5, usedSlugs, promoPriority());
 	let dualFeatures = takeUniquePosts(localCity, 2, usedSlugs, promoPriority());
-	const sciLead = sitemaps?.cm?.[0] ? mapRss(sitemaps.cm[0]) : takeUniquePosts(localCity, 1, usedSlugs, promoPriority())[0];
-	const sciMinis = (
-		sitemaps?.cm?.slice(1, 6) || takeUniquePosts(localCity, 5, usedSlugs, promoPriority())
-	).map(mapRss);
+	const cmFeed = Array.isArray(sitemaps?.cm) ? sitemaps.cm.filter(Boolean) : [];
 	const popularPool = sortPostsByDate([
 		...localCity.filter((p) => p.trending || p.topPost),
 		...localCity,
@@ -334,36 +331,33 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 			)}
 
 			{/* Sci-Tech */}
-			{sciLead && (
+
+			{cmFeed.length > 0 && (
 				<section className="nh-section">
 					<div className="soledad-container">
 						<h2 className="nh-section__title">
-							<a href="https://cautimasina.ro" target="_blank" rel="noopener noreferrer">
+							<a href="https://cautimasina.ro/" target="_blank" rel="noopener noreferrer">
 								Auto
 							</a>
 						</h2>
-						<div className="nh-scitech-layout">
-							<div className="nh-scitech-layout__lead">
-								<SoledadPostCard data={sciLead} variant="hero" />
-								<p className="nh-scitech-layout__excerpt">
-									{(sciLead.summary || sciLead.description || sciLead.excerpt || "")
-										.replace(/<[^>]+>/g, "")
-										.substring(0, 200)}
-									...
-								</p>
-							</div>
-							<ul className="nh-scitech-minis">
-								{sciMinis.map((post) => (
-									<li key={post.slug || post.link}>
-										<Link href={postHref(post)}>{post.title}</Link>
-										<span>{formatDate(post.date || post.isoDate)}</span>
-									</li>
-								))}
-							</ul>
+						<p className="soledad-section-intro">
+							Ultimele știri auto de pe CautiMasina.ro
+						</p>
+						<SoledadImportedList items={cmFeed.slice(0, 6)} />
+						<div className="soledad-load-more">
+							<a
+								href="https://cautimasina.ro/"
+								className="soledad-btn"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Mai multe pe CautiMasina
+							</a>
 						</div>
 					</div>
 				</section>
 			)}
+
 
 			{/* Popular articles */}
 			{popularPosts.length > 0 && (

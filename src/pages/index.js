@@ -42,6 +42,29 @@ const HomeOne = ({ allPosts, sitemaps }) => {
 
 export default HomeOne;
 
+
+async function fetchCautiMasinaItems(parser, limit = 6) {
+	const url = "https://cautimasina.ro/rss.xml";
+	for (let attempt = 0; attempt < 3; attempt += 1) {
+		try {
+			const feed = await parser.parseURL(url);
+			const items = (feed?.items || [])
+				.filter(
+					(item) =>
+						item?.title &&
+						item?.link &&
+						/cautimasina\.ro/i.test(String(item.link))
+				)
+				.slice(0, limit);
+			if (items.length) return items;
+		} catch (err) {
+			// retry on 429 / timeout
+		}
+		await new Promise((resolve) => setTimeout(resolve, 600 * (attempt + 1)));
+	}
+	return [];
+}
+
 export async function getServerSideProps() {
 	const posts = (await getAllPosts([
 		"postFormat",
@@ -80,9 +103,10 @@ export async function getServerSideProps() {
 		new Parser({ timeout: 2000 }).parseURL("https://sfaturidesanatate.ro/rss.xml"),
 		new Parser({ timeout: 2000 }).parseURL("https://ghidulgospodarului.ro/rss.xml"),
 		new Parser({ timeout: 2000 }).parseURL("https://azicemancam.ro/rss.xml"),
-		new Parser({ timeout: 2000 }).parseURL("https://cautimasina.ro/rss.xml"),
 		new Parser({ timeout: 2000 }).parseURL("https://painesicirc.ro/rss.xml"),
 	]);
+
+	const cmItems = await fetchCautiMasinaItems(new Parser({ timeout: 8000 }), 6);
 
 	return {
 		props: {
@@ -94,8 +118,8 @@ export async function getServerSideProps() {
 				sanatate: weboSitemaps[3]?.value?.items?.slice(0, 6) || [],
 				gospodar: weboSitemaps[4]?.value?.items?.slice(0, 6) || [],
 				azi: weboSitemaps[5]?.value?.items?.slice(0, 6) || [],
-				cm: weboSitemaps[6]?.value?.items?.slice(0, 6) || [],
-				pc: weboSitemaps[7]?.value?.items?.slice(0, 10) || [],
+				cm: cmItems,
+				pc: weboSitemaps[6]?.value?.items?.slice(0, 10) || [],
 			},
 		},
 	};
