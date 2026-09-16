@@ -339,7 +339,7 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 					<div className="soledad-container">
 						<h2 className="nh-section__title">
 							<a href="https://cautimasina.ro" target="_blank" rel="noopener noreferrer">
-								Știință &amp; tehnologie
+								Auto
 							</a>
 						</h2>
 						<div className="nh-scitech-layout">

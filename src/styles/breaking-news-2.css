@@ -551,7 +551,7 @@ body.bn2-theme .page-footer {
 
 .soledad-cat-box p {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   margin: 0 0 10px;
   line-height: 1.45;
 }
@@ -562,6 +562,57 @@ body.bn2-theme .page-footer {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #fff;
+}
+
+
+
+/* Force white text inside dark category cards (beats global `p` / link inherit) */
+body.soledad-theme a.soledad-cat-box,
+body.soledad-theme a.soledad-cat-box:hover,
+body.soledad-theme .soledad-cat-box,
+body.soledad-theme .soledad-cat-box:hover,
+body.bn2-theme a.soledad-cat-box,
+body.bn2-theme a.soledad-cat-box:hover,
+body.bn2-theme .soledad-cat-box,
+body.bn2-theme .soledad-cat-box:hover,
+a.soledad-cat-box.soledad-cat-box--local,
+a.soledad-cat-box.soledad-cat-box--evenimente,
+a.soledad-cat-box.soledad-cat-box--stiri,
+a.soledad-cat-box.soledad-cat-box--parteneri {
+  color: #fff;
+}
+
+body.soledad-theme .soledad-cat-box h4,
+body.soledad-theme .soledad-cat-box p,
+body.soledad-theme .soledad-cat-box__title,
+body.soledad-theme .soledad-cat-box__desc,
+body.soledad-theme .soledad-cat-box .read-more,
+body.bn2-theme .soledad-cat-box h4,
+body.bn2-theme .soledad-cat-box p,
+body.bn2-theme .soledad-cat-box__title,
+body.bn2-theme .soledad-cat-box__desc,
+body.bn2-theme .soledad-cat-box .read-more,
+.soledad-cat-box--local h4,
+.soledad-cat-box--local p,
+.soledad-cat-box--local .soledad-cat-box__title,
+.soledad-cat-box--local .soledad-cat-box__desc,
+.soledad-cat-box--local .read-more,
+.soledad-cat-box--evenimente h4,
+.soledad-cat-box--evenimente p,
+.soledad-cat-box--evenimente .soledad-cat-box__title,
+.soledad-cat-box--evenimente .soledad-cat-box__desc,
+.soledad-cat-box--evenimente .read-more,
+.soledad-cat-box--stiri h4,
+.soledad-cat-box--stiri p,
+.soledad-cat-box--stiri .soledad-cat-box__title,
+.soledad-cat-box--stiri .soledad-cat-box__desc,
+.soledad-cat-box--stiri .read-more,
+.soledad-cat-box--parteneri h4,
+.soledad-cat-box--parteneri p,
+.soledad-cat-box--parteneri .soledad-cat-box__title,
+.soledad-cat-box--parteneri .soledad-cat-box__desc,
+.soledad-cat-box--parteneri .read-more {
+  color: #fff !important;
 }
 
 .soledad-cat-box--local { background-color: #1d3557; }
