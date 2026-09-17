@@ -44,10 +44,19 @@ export default HomeOne;
 
 
 async function fetchCautiMasinaItems(parser, limit = 6) {
-	const url = "https://cautimasina.ro/rss.xml";
+	const urls = ["https://cautimasina.ro/feed.rss", "https://cautimasina.ro/rss.xml"];
 	for (let attempt = 0; attempt < 3; attempt += 1) {
 		try {
-			const feed = await parser.parseURL(url);
+			let feed = null;
+			for (const url of urls) {
+				try {
+					feed = await parser.parseURL(url);
+					if (feed?.items?.length) break;
+				} catch {
+					feed = null;
+				}
+			}
+			if (!feed) throw new Error("CautiMasina feed unavailable");
 			const items = (feed?.items || [])
 				.filter(
 					(item) =>
