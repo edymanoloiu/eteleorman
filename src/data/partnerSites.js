@@ -138,6 +138,7 @@ const partnerSites = [
 		title: "Site-uri partenere tehnice",
 		sites: [
 			{ url: "https://cautimasina.ro/", label: "Cauți Mașină - Anunțuri auto și cele mai noi știri și review-uri auto" },
+			{ url: "https://carboratory.com/", label: "Carboratory - Independent car reviews, EV tests and automotive news" },
 			{ url: "https://masinipestoc.ro/", label: "MasiniPeStoc.ro - Platformă unde ceri o singură ofertă pentru mașina nouă și compari răspunsurile dealerilor" },
 			{ url: "https://motozone.ro/", label: "MotoZone - Ghiduri despre motociclete și ATV-uri pentru România" },
 			{ url: "https://itsitehnologie.ro/", label: "Știri IT și Tehnologie" },
