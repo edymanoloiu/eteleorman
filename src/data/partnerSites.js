@@ -121,6 +121,7 @@ const partnerSites = [
 			{ url: "https://scutecescu.ro/", label: "Scutecescu - Ghid românesc pentru bebeluși și copii mici" },
 			{ url: "https://casalapunct.ro/", label: "Casa La Punct - Cauți, cumperi, renovezi, rezolvi." },
 			{ url: "https://undeinvatam.ro/", label: "Unde Învățăm - Găsește educația potrivită" },
+			{ url: "https://10beneficii.ro/", label: "10 Beneficii - Descoperă 10 beneficii care fac diferența" },
 		],
 	},
 	{
