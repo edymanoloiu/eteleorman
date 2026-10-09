@@ -1,12 +1,15 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"main": ".open-next/worker.js",
+	"main": "cloudflare-worker.js",
 	"name": "aziinalexandria",
 	"compatibility_date": "2025-12-05",
 	"compatibility_flags": [
 		"nodejs_compat",
 		"global_fetch_strictly_public"
 	],
+	"cache": {
+		"enabled": true
+	},
 	"assets": {
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
@@ -15,7 +18,7 @@
 		"logs": {
 			"enabled": true,
 			"head_sampling_rate": 0.05,
-			"invocation_logs": true,
+			"invocation_logs": false,
 			"persist": false
 		},
 		"enabled": false
