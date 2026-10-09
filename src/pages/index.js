@@ -1,7 +1,7 @@
 import Parser from 'rss-parser';
 import { getAllPosts } from "../../lib/api";
 import { isRecomandarePost, dedupePostsBySlug } from "../../lib/recomandarePosts";
-import { buildLocalPostsWithPromos } from "../../lib/homepagePosts";
+import { buildLocalPostsWithPromos, sortPostsByDate } from "../../lib/homepagePosts";
 import HeadMeta from "../components/elements/HeadMeta";
 import FooterOne from "../components/footer/FooterOne";
 import HeaderOne from "../components/header/HeaderOne";
@@ -97,12 +97,15 @@ export async function getServerSideProps() {
 		"tags",
 	]))
 		.filter((post) => !isRecomandarePost(post))
-		.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+	const takeLatest = (predicate, limit = 30) =>
+		sortPostsByDate(posts.filter(predicate)).slice(0, limit);
+
 	const allPosts = [
-		...posts.filter((a) => a.cate === 'Evenimente si cultura').slice(0, 30),
-		...posts.filter((a) => a.cate === site.localCate).slice(0, 30),
-		...posts.filter((a) => a.cate === 'Stiri nationale si internationale').slice(0, 30),
-		...posts.filter((a) => a.isPromo).slice(0, 30),
+		...takeLatest((a) => a.cate === 'Evenimente si cultura'),
+		...takeLatest((a) => a.cate === site.localCate),
+		...takeLatest((a) => a.cate === 'Stiri nationale si internationale'),
+		...takeLatest((a) => a.isPromo),
 	];
 
 	const weboSitemaps = await Promise.allSettled([
