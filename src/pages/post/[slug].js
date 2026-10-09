@@ -154,7 +154,7 @@ export async function getStaticProps({ params }) {
 		};
 	}
 
-	const content = await markdownToHtml(post.content || '')
+	const content = await markdownToHtml(post.content || '', { title: post.title })
 
 	const allPosts = (await getAllPosts([
 		'title',
