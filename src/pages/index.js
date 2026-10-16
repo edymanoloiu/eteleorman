@@ -91,9 +91,7 @@ export async function getServerSideProps({ res }) {
 	];
 
 	const sitemaps = await fetchPartnerSitemaps();
-const cmItems = await fetchCautiMasinaItems(new Parser({ timeout: 8000 }), 6);
-
-	return {
+return {
 		props: {
 			allPosts,
 			sitemaps,
