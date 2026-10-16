@@ -1,5 +1,5 @@
-import Parser from 'rss-parser';
 import { getAllPosts } from "../../lib/api";
+import { fetchPartnerSitemaps } from "../../lib/partnerRssFeeds";
 import { isRecomandarePost, dedupePostsBySlug } from "../../lib/recomandarePosts";
 import { buildLocalPostsWithPromos, sortPostsByDate } from "../../lib/homepagePosts";
 import HeadMeta from "../components/elements/HeadMeta";
@@ -43,38 +43,20 @@ const HomeOne = ({ allPosts, sitemaps }) => {
 export default HomeOne;
 
 
-async function fetchCautiMasinaItems(parser, limit = 6) {
-	const urls = ["https://cautimasina.ro/feed.rss", "https://cautimasina.ro/rss.xml"];
-	for (let attempt = 0; attempt < 3; attempt += 1) {
-		try {
-			let feed = null;
-			for (const url of urls) {
-				try {
-					feed = await parser.parseURL(url);
-					if (feed?.items?.length) break;
-				} catch {
-					feed = null;
-				}
-			}
-			if (!feed) throw new Error("CautiMasina feed unavailable");
-			const items = (feed?.items || [])
-				.filter(
-					(item) =>
-						item?.title &&
-						item?.link &&
-						/cautimasina\.ro/i.test(String(item.link))
-				)
-				.slice(0, limit);
-			if (items.length) return items;
-		} catch (err) {
-			// retry on 429 / timeout
-		}
-		await new Promise((resolve) => setTimeout(resolve, 600 * (attempt + 1)));
-	}
-	return [];
-}
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ res }) {
+	if (res) {
+		res.setHeader(
+			"Cache-Control",
+			"public, s-maxage=300, stale-while-revalidate=86400",
+		);
+		res.setHeader(
+			"CDN-Cache-Control",
+			"public, s-maxage=300, stale-while-revalidate=86400",
+		);
+	}
+
+
 	const posts = (await getAllPosts([
 		"postFormat",
 		"trending",

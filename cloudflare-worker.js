@@ -23,8 +23,20 @@ export default {
 		const response = await openNextWorker.fetch(request, env, ctx);
 		const url = new URL(request.url);
 		if (!isCacheablePublicRequest(request, response, url)) return response;
-		const headers = new Headers(response.headers);
-		headers.set("Cloudflare-CDN-Cache-Control", "public, s-maxage=" + edgeTtl(url.pathname) + ", stale-while-revalidate=86400");
-		return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+				const headers = new Headers(response.headers);
+		const ttl = edgeTtl(url.pathname);
+		const edgeCache = "public, s-maxage=" + ttl + ", stale-while-revalidate=86400";
+		// Override Next SSR defaults that otherwise prevent CDN caching.
+		headers.set("Cache-Control", edgeCache);
+		headers.set("CDN-Cache-Control", edgeCache);
+		headers.set("Cloudflare-CDN-Cache-Control", edgeCache);
+		headers.delete("Pragma");
+		headers.delete("Expires");
+		return new Response(response.body, {
+			status: response.status,
+			statusText: response.statusText,
+			headers,
+		});
+
 	},
 };
