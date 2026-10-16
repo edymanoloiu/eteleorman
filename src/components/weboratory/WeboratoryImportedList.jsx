@@ -52,7 +52,7 @@ function ItemLink({ href, className, children }) {
 	);
 }
 
-const SoledadImportedList = ({ items }) => {
+const WeboratoryImportedList = ({ items }) => {
 	if (!items?.length) return null;
 
 	return (
@@ -64,8 +64,8 @@ const SoledadImportedList = ({ items }) => {
 				const excerpt = getExcerpt(data);
 
 				return (
-					<div className="soledad-list-item" key={data?.slug || data?.guid || data?.link || index}>
-						<ItemLink href={href} className="soledad-list-item__thumb">
+					<div className="weboratory-list-item" key={data?.slug || data?.guid || data?.link || index}>
+						<ItemLink href={href} className="weboratory-list-item__thumb">
 							<ImageWithFallback
 								src={imageUrl}
 								alt={data.title}
@@ -75,11 +75,11 @@ const SoledadImportedList = ({ items }) => {
 							/>
 						</ItemLink>
 						<div>
-							<h4 className="soledad-list-item__title">
+							<h4 className="weboratory-list-item__title">
 								<ItemLink href={href}>{data.title}</ItemLink>
 							</h4>
-							{excerpt ? <p className="soledad-list-item__excerpt">{excerpt}</p> : null}
-							<span className="soledad-post-card__date">{formatDate(data.isoDate)}</span>
+							{excerpt ? <p className="weboratory-list-item__excerpt">{excerpt}</p> : null}
+							<span className="weboratory-post-card__date">{formatDate(data.isoDate)}</span>
 						</div>
 					</div>
 				);
@@ -88,4 +88,4 @@ const SoledadImportedList = ({ items }) => {
 	);
 };
 
-export default SoledadImportedList;
+export default WeboratoryImportedList;

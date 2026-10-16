@@ -1,9 +1,9 @@
-/* Soledad News Hub – https://soledaddemo.pencidesign.net/soledad-news-hub/ */
+/* Weboratory News Hub – https://weboratorydemo.pencidesign.net/weboratory-news-hub/ */
 
 .nh-hub {
-  background: var(--soledad-bg);
-  color: var(--soledad-text);
-  font-family: var(--soledad-font-body);
+  background: var(--weboratory-bg);
+  color: var(--weboratory-text);
+  font-family: var(--weboratory-font-body);
 }
 
 .nh-hub a {
@@ -12,13 +12,13 @@
 }
 
 .nh-hub a:hover {
-  color: var(--soledad-accent);
+  color: var(--weboratory-accent);
 }
 
 /* Top mosaic + spotlight */
 .nh-top-section {
   padding: 32px 0 40px;
-  border-bottom: 1px solid var(--soledad-border);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-top-layout {
@@ -34,13 +34,13 @@
   gap: 28px;
 }
 
-.nh-story-card .soledad-trending-card {
+.nh-story-card .weboratory-trending-card {
   aspect-ratio: 16/10;
   margin-bottom: 14px;
 }
 
 .nh-story-card__body h2 {
-  font-family: var(--soledad-font-heading);
+  font-family: var(--weboratory-font-heading);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.35;
@@ -48,29 +48,29 @@
 }
 
 .nh-story-card__body h2 a {
-  color: var(--soledad-text);
+  color: var(--weboratory-text);
 }
 
 .nh-story-card__body p {
   font-size: 14px;
   line-height: 1.6;
-  color: var(--soledad-text-muted);
+  color: var(--weboratory-text-muted);
   margin: 0;
 }
 
 .nh-spotlight {
-  background: var(--soledad-bg-elevated);
-  border: 1px solid var(--soledad-border);
+  background: var(--weboratory-bg-elevated);
+  border: 1px solid var(--weboratory-border);
   padding: 22px 24px;
 }
 
 .nh-spotlight__title {
-  font-family: var(--soledad-font-heading);
+  font-family: var(--weboratory-font-heading);
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 18px;
   padding-bottom: 10px;
-  border-bottom: 3px solid var(--soledad-accent);
+  border-bottom: 3px solid var(--weboratory-accent);
 }
 
 .nh-spotlight ul {
@@ -81,7 +81,7 @@
 
 .nh-spotlight li {
   padding: 12px 0;
-  border-bottom: 1px solid var(--soledad-border);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-spotlight li:last-child {
@@ -97,7 +97,7 @@
 
 .nh-spotlight li span {
   font-size: 11px;
-  color: var(--soledad-text-muted);
+  color: var(--weboratory-text-muted);
   margin-top: 4px;
   display: block;
 }
@@ -105,7 +105,7 @@
 /* Dual category lists */
 .nh-dual-section {
   padding: 36px 0;
-  border-bottom: 1px solid var(--soledad-border);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-dual-cols {
@@ -115,16 +115,16 @@
 }
 
 .nh-cat-list__title {
-  font-family: var(--soledad-font-heading);
+  font-family: var(--weboratory-font-heading);
   font-size: 22px;
   font-weight: 700;
   margin: 0 0 20px;
   padding-bottom: 10px;
-  border-bottom: 3px solid var(--soledad-accent);
+  border-bottom: 3px solid var(--weboratory-accent);
 }
 
 .nh-cat-list__title a {
-  color: var(--soledad-text);
+  color: var(--weboratory-text);
 }
 
 .nh-cat-list ul {
@@ -135,7 +135,7 @@
 
 .nh-cat-list li {
   padding: 14px 0;
-  border-bottom: 1px solid var(--soledad-border);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-cat-list li:last-child {
@@ -151,7 +151,7 @@
 
 .nh-cat-list__date {
   font-size: 12px;
-  color: var(--soledad-text-muted);
+  color: var(--weboratory-text-muted);
   margin-top: 6px;
   display: block;
 }
@@ -159,24 +159,24 @@
 /* Section blocks */
 .nh-section {
   padding: 40px 0;
-  border-bottom: 1px solid var(--soledad-border);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-section--alt {
-  background: var(--soledad-bg-elevated);
+  background: var(--weboratory-bg-elevated);
 }
 
 .nh-section__title {
-  font-family: var(--soledad-font-heading);
+  font-family: var(--weboratory-font-heading);
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 28px;
   padding-bottom: 10px;
-  border-bottom: 3px solid var(--soledad-accent);
+  border-bottom: 3px solid var(--weboratory-accent);
 }
 
 .nh-section__title a {
-  color: var(--soledad-text);
+  color: var(--weboratory-text);
 }
 
 /* Video grid */
@@ -186,7 +186,7 @@
   gap: 20px;
 }
 
-.nh-video-grid .soledad-trending-card {
+.nh-video-grid .weboratory-trending-card {
   aspect-ratio: 16/10;
 }
 
@@ -199,7 +199,7 @@
   margin-bottom: 24px;
 }
 
-.nh-politics-layout__lead .soledad-hero-card {
+.nh-politics-layout__lead .weboratory-hero-card {
   min-height: 380px;
 }
 
@@ -214,7 +214,7 @@
 
 .nh-politics-more li {
   padding: 12px 0;
-  border-top: 1px solid var(--soledad-border);
+  border-top: 1px solid var(--weboratory-border);
 }
 
 .nh-politics-more a {
@@ -226,7 +226,7 @@
 
 .nh-politics-more span {
   font-size: 12px;
-  color: var(--soledad-text-muted);
+  color: var(--weboratory-text-muted);
   margin-top: 6px;
   display: block;
 }
@@ -239,7 +239,7 @@
   align-items: start;
 }
 
-.nh-lifestyle-layout__featured .soledad-hero-card {
+.nh-lifestyle-layout__featured .weboratory-hero-card {
   min-height: 420px;
 }
 
@@ -251,7 +251,7 @@
 
 .nh-lifestyle-links li {
   padding: 14px 0;
-  border-bottom: 1px solid var(--soledad-border);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-lifestyle-links li a {
@@ -263,7 +263,7 @@
 
 .nh-lifestyle-links li span {
   font-size: 12px;
-  color: var(--soledad-text-muted);
+  color: var(--weboratory-text-muted);
   margin-top: 6px;
   display: block;
 }
@@ -271,7 +271,7 @@
 /* Dual hero */
 .nh-dual-hero {
   padding: 40px 0;
-  border-bottom: 1px solid var(--soledad-border);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-dual-hero__grid {
@@ -280,7 +280,7 @@
   gap: 28px;
 }
 
-.nh-dual-hero__item .soledad-hero-card {
+.nh-dual-hero__item .weboratory-hero-card {
   min-height: 400px;
 }
 
@@ -292,7 +292,7 @@
   align-items: start;
 }
 
-.nh-scitech-layout__lead .soledad-hero-card {
+.nh-scitech-layout__lead .weboratory-hero-card {
   min-height: 360px;
   margin-bottom: 14px;
 }
@@ -300,7 +300,7 @@
 .nh-scitech-layout__excerpt {
   font-size: 14px;
   line-height: 1.65;
-  color: var(--soledad-text-muted);
+  color: var(--weboratory-text-muted);
   margin: 0;
 }
 
@@ -312,7 +312,7 @@
 
 .nh-scitech-minis li {
   padding: 14px 0;
-  border-bottom: 1px solid var(--soledad-border);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-scitech-minis li a {
@@ -324,7 +324,7 @@
 
 .nh-scitech-minis li span {
   font-size: 12px;
-  color: var(--soledad-text-muted);
+  color: var(--weboratory-text-muted);
   margin-top: 6px;
   display: block;
 }
@@ -336,15 +336,15 @@
   gap: 20px;
 }
 
-.nh-popular-grid .soledad-trending-card {
+.nh-popular-grid .weboratory-trending-card {
   aspect-ratio: 4/3;
 }
 
 /* Magazine columns */
 .nh-magazine-cols-wrap {
   padding: 44px 0;
-  background: var(--soledad-bg-elevated);
-  border-bottom: 1px solid var(--soledad-border);
+  background: var(--weboratory-bg-elevated);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-magazine-cols {
@@ -354,23 +354,23 @@
 }
 
 .nh-mag-col__title {
-  font-family: var(--soledad-font-heading);
+  font-family: var(--weboratory-font-heading);
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 18px;
   padding-bottom: 10px;
-  border-bottom: 3px solid var(--soledad-accent);
+  border-bottom: 3px solid var(--weboratory-accent);
 }
 
 .nh-mag-col__title a {
-  color: var(--soledad-text);
+  color: var(--weboratory-text);
 }
 
 .nh-mag-col__featured {
   margin-bottom: 16px;
 }
 
-.nh-mag-col__featured .soledad-trending-card {
+.nh-mag-col__featured .weboratory-trending-card {
   aspect-ratio: 16/10;
 }
 
@@ -382,7 +382,7 @@
 
 .nh-mag-col__list li {
   padding: 12px 0;
-  border-bottom: 1px solid var(--soledad-border);
+  border-bottom: 1px solid var(--weboratory-border);
 }
 
 .nh-mag-col__list li:last-child {
@@ -398,13 +398,13 @@
 
 .nh-mag-col__date {
   font-size: 11px;
-  color: var(--soledad-text-muted);
+  color: var(--weboratory-text-muted);
   margin-top: 4px;
   display: block;
 }
 
-body.bn2-theme .nh-hub a.soledad-trending-card,
-body.bn2-theme .nh-hub a.soledad-trending-card:hover {
+body.bn2-theme .nh-hub a.weboratory-trending-card,
+body.bn2-theme .nh-hub a.weboratory-trending-card:hover {
   color: #fff;
 }
 

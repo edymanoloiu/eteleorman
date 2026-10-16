@@ -1,4 +1,4 @@
-const soledadSite = {
+const weboratorySite = {
 	localCate: "Azi in Alexandria",
 	categorySlug: "azi-in-alexandria",
 	pageH1: "Știri din Teleorman",
@@ -13,4 +13,4 @@ const soledadSite = {
 	metaTitle: "eTeleorman - Știri din Teleorman și Alexandria",
 };
 
-export default soledadSite;
+export default weboratorySite;

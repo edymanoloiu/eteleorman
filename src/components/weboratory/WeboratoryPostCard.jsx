@@ -16,19 +16,19 @@ const formatDate = (date) => {
 	}
 };
 
-const SoledadPostCard = ({ data, variant = "grid" }) => {
+const WeboratoryPostCard = ({ data, variant = "grid" }) => {
 	const href = data.link || getPostHref(data);
 	const img = getPostImageSrc(data);
 	const excerpt = data.excerpt ? `${data.excerpt.substring(0, 120)}...` : "";
 
 	if (variant === "featured") {
 		return (
-			<Link href={href} className="soledad-featured-card">
+			<Link href={href} className="weboratory-featured-card">
 				<ImageWithFallback src={img} alt={data.title} fill sizes="(max-width:768px) 50vw, 25vw" unoptimized />
-				<div className="soledad-featured-card__overlay">
-					<span className="soledad-featured-card__cat">{data.cate || data.creator || "Știri"}</span>
-					<h3 className="soledad-featured-card__title">{data.title}</h3>
-					<span className="soledad-featured-card__meta">{formatDate(data.date || data.isoDate)}</span>
+				<div className="weboratory-featured-card__overlay">
+					<span className="weboratory-featured-card__cat">{data.cate || data.creator || "Știri"}</span>
+					<h3 className="weboratory-featured-card__title">{data.title}</h3>
+					<span className="weboratory-featured-card__meta">{formatDate(data.date || data.isoDate)}</span>
 				</div>
 			</Link>
 		);
@@ -36,7 +36,7 @@ const SoledadPostCard = ({ data, variant = "grid" }) => {
 
 	if (variant === "hero") {
 		return (
-			<Link href={href} className="soledad-hero-card">
+			<Link href={href} className="weboratory-hero-card">
 				<ImageWithFallback
 					src={img}
 					alt={data.title}
@@ -45,11 +45,11 @@ const SoledadPostCard = ({ data, variant = "grid" }) => {
 					unoptimized
 					style={{ objectFit: "cover" }}
 				/>
-				<div className="soledad-hero-card__overlay">
-					<span className="soledad-featured-card__cat">{data.cate || "Știri"}</span>
-					<h2 className="soledad-hero-card__title">{data.title}</h2>
-					{excerpt && <p className="soledad-hero-card__excerpt">{excerpt}</p>}
-					<span className="soledad-featured-card__meta">{formatDate(data.date)}</span>
+				<div className="weboratory-hero-card__overlay">
+					<span className="weboratory-featured-card__cat">{data.cate || "Știri"}</span>
+					<h2 className="weboratory-hero-card__title">{data.title}</h2>
+					{excerpt && <p className="weboratory-hero-card__excerpt">{excerpt}</p>}
+					<span className="weboratory-featured-card__meta">{formatDate(data.date)}</span>
 				</div>
 			</Link>
 		);
@@ -78,35 +78,35 @@ const SoledadPostCard = ({ data, variant = "grid" }) => {
 
 	if (variant === "trending") {
 		return (
-			<Link href={href} className="soledad-trending-card">
+			<Link href={href} className="weboratory-trending-card">
 				<ImageWithFallback src={img} alt={data.title} fill sizes="(max-width:768px) 100vw, 33vw" unoptimized />
-				<div className="soledad-trending-card__overlay">
+				<div className="weboratory-trending-card__overlay">
 					<h4>{data.title}</h4>
-					<span className="soledad-featured-card__meta">{formatDate(data.date || data.isoDate)}</span>
+					<span className="weboratory-featured-card__meta">{formatDate(data.date || data.isoDate)}</span>
 				</div>
 			</Link>
 		);
 	}
 
 	return (
-		<article className="soledad-post-card">
-			<Link href={href} className="soledad-post-card__img">
+		<article className="weboratory-post-card">
+			<Link href={href} className="weboratory-post-card__img">
 				<ImageWithFallback src={img} alt={data.title} fill sizes="(max-width:768px) 100vw, 50vw" unoptimized />
 			</Link>
-			<div className="soledad-post-card__body">
+			<div className="weboratory-post-card__body">
 				{data.cate && (
-					<Link href={`/categorie/${slugify(data.cate)}`} className="soledad-post-card__cat">
+					<Link href={`/categorie/${slugify(data.cate)}`} className="weboratory-post-card__cat">
 						{data.cate}
 					</Link>
 				)}
-				<h3 className="soledad-post-card__title">
+				<h3 className="weboratory-post-card__title">
 					<Link href={href}>{data.title}</Link>
 				</h3>
-				{excerpt && <p className="soledad-post-card__excerpt">{excerpt}</p>}
-				<span className="soledad-post-card__date">{formatDate(data.date)}</span>
+				{excerpt && <p className="weboratory-post-card__excerpt">{excerpt}</p>}
+				<span className="weboratory-post-card__date">{formatDate(data.date)}</span>
 			</div>
 		</article>
 	);
 };
 
-export default SoledadPostCard;
+export default WeboratoryPostCard;

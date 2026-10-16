@@ -7,10 +7,10 @@ import {
 	sortPostsByDate,
 	takeUniquePosts,
 } from "../../../lib/homepagePosts";
-import site from "../../data/soledadSite";
-import SoledadPostCard from "./SoledadPostCard";
-import SoledadImportedList from "./SoledadImportedList";
-import SoledadBreakingTicker from "./SoledadBreakingTicker";
+import site from "../../data/weboratorySite";
+import WeboratoryPostCard from "./WeboratoryPostCard";
+import WeboratoryImportedList from "./WeboratoryImportedList";
+import WeboratoryBreakingTicker from "./WeboratoryBreakingTicker";
 import WidgetNewsletter from "../widget/WidgetNewsletter";
 import SocialLink from "../../data/social/SocialLink.json";
 
@@ -80,7 +80,7 @@ const MagazineColumn = ({ title, href, featured, items, external }) => {
 			</h3>
 			{featured && (
 				<div className="nh-mag-col__featured">
-					<SoledadPostCard data={featured} variant="trending" />
+					<WeboratoryPostCard data={featured} variant="trending" />
 				</div>
 			)}
 			<ul className="nh-mag-col__list">
@@ -95,7 +95,7 @@ const MagazineColumn = ({ title, href, featured, items, external }) => {
 	);
 };
 
-const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) => {
+const WeboratoryNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) => {
 	const seen = new Set();
 	const dedupedLocal = localPosts.filter((p) => {
 		if (seen.has(p.slug)) return false;
@@ -176,18 +176,18 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 	return (
 		<div className="bn2-homepage nh-hub">
 			<h1 className="visually-hidden">{site.pageH1}</h1>
-			<SoledadBreakingTicker posts={localCity} />
+			<WeboratoryBreakingTicker posts={localCity} />
 
 			{/* Top mosaic + În centrul atenției */}
 			{(topFour.length > 0 || spotlight.length > 0) && (
 				<section className="nh-top-section">
-					<div className="soledad-container">
+					<div className="weboratory-container">
 						<div className="nh-top-layout">
 							{topFour.length > 0 && (
 								<div className="nh-top-grid">
 									{topFour.map((post) => (
 										<article key={post.slug} className="nh-story-card">
-											<SoledadPostCard data={post} variant="trending" />
+											<WeboratoryPostCard data={post} variant="trending" />
 											<div className="nh-story-card__body">
 												<h2>
 													<Link href={getPostHref(post)}>{post.title}</Link>
@@ -219,7 +219,7 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 			{/* Latest local | Events */}
 			{(localLatest.length > 0 || eventsLatest.length > 0) && (
 				<section className="nh-dual-section">
-					<div className="soledad-container">
+					<div className="weboratory-container">
 						<div className="nh-dual-cols">
 							<CategoryList
 								title={`Ultimele din ${site.localBoxTitle.replace("Azi în ", "")}`}
@@ -239,13 +239,13 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 			{/* Video / culture highlights */}
 			{videoPosts.length > 0 && (
 				<section className="nh-section nh-section--alt">
-					<div className="soledad-container">
+					<div className="weboratory-container">
 						<h2 className="nh-section__title">
 							<Link href="/categorie/evenimente-si-cultura">Evenimente &amp; recomandări</Link>
 						</h2>
 						<div className="nh-video-grid">
 							{videoPosts.map((post) => (
-								<SoledadPostCard key={post.slug} data={post} variant="trending" />
+								<WeboratoryPostCard key={post.slug} data={post} variant="trending" />
 							))}
 						</div>
 					</div>
@@ -255,14 +255,14 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 			{/* World & politics */}
 			{politicsList.length > 0 && (
 				<section className="nh-section">
-					<div className="soledad-container">
+					<div className="weboratory-container">
 						<h2 className="nh-section__title">
 							<Link href="/categorie/stiri-nationale-si-internationale">Politică &amp; actualitate</Link>
 						</h2>
 						<div className="nh-politics-layout">
 							{politicsList[0] && (
 								<div className="nh-politics-layout__lead">
-									<SoledadPostCard
+									<WeboratoryPostCard
 										data={{
 											...politicsList[0],
 											excerpt: (politicsList[0].summary || politicsList[0].description || "")
@@ -273,7 +273,7 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 									/>
 								</div>
 							)}
-							<SoledadImportedList items={politicsList.slice(1, 5)} />
+							<WeboratoryImportedList items={politicsList.slice(1, 5)} />
 						</div>
 						{politicsList.length > 5 && (
 							<ul className="nh-politics-more">
@@ -292,14 +292,14 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 			{/* Life style */}
 			{(lifestyleFeatured || lifestyleLinks.length > 0) && (
 				<section className="nh-section nh-section--alt">
-					<div className="soledad-container">
+					<div className="weboratory-container">
 						<h2 className="nh-section__title">
 							<Link href={`/categorie/${site.categorySlug}`}>Viață &amp; stil</Link>
 						</h2>
 						<div className="nh-lifestyle-layout">
 							{lifestyleFeatured && (
 								<div className="nh-lifestyle-layout__featured">
-									<SoledadPostCard data={lifestyleFeatured} variant="hero" />
+									<WeboratoryPostCard data={lifestyleFeatured} variant="hero" />
 								</div>
 							)}
 							<ul className="nh-lifestyle-links">
@@ -318,11 +318,11 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 			{/* Dual big features */}
 			{dualFeatures.length > 0 && (
 				<section className="nh-dual-hero">
-					<div className="soledad-container">
+					<div className="weboratory-container">
 						<div className="nh-dual-hero__grid">
 							{dualFeatures.map((post) => (
 								<div key={post.slug} className="nh-dual-hero__item">
-									<SoledadPostCard data={post} variant="hero" />
+									<WeboratoryPostCard data={post} variant="hero" />
 								</div>
 							))}
 						</div>
@@ -334,20 +334,20 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 
 			{cmFeed.length > 0 && (
 				<section className="nh-section">
-					<div className="soledad-container">
+					<div className="weboratory-container">
 						<h2 className="nh-section__title">
 							<a href="https://cautimasina.ro/" target="_blank" rel="noopener noreferrer">
 								Auto
 							</a>
 						</h2>
-						<p className="soledad-section-intro">
+						<p className="weboratory-section-intro">
 							Ultimele știri auto de pe CautiMasina.ro
 						</p>
-						<SoledadImportedList items={cmFeed.slice(0, 6)} />
-						<div className="soledad-load-more">
+						<WeboratoryImportedList items={cmFeed.slice(0, 6)} />
+						<div className="weboratory-load-more">
 							<a
 								href="https://cautimasina.ro/"
-								className="soledad-btn"
+								className="weboratory-btn"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -362,11 +362,11 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 			{/* Popular articles */}
 			{popularPosts.length > 0 && (
 				<section className="nh-section nh-section--alt">
-					<div className="soledad-container">
+					<div className="weboratory-container">
 						<h2 className="nh-section__title">Articole populare</h2>
 						<div className="nh-popular-grid">
 							{popularPosts.map((post) => (
-								<SoledadPostCard key={post.slug} data={post} variant="trending" />
+								<WeboratoryPostCard key={post.slug} data={post} variant="trending" />
 							))}
 						</div>
 					</div>
@@ -375,7 +375,7 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 
 			{/* Four magazine columns */}
 			<section className="nh-magazine-cols-wrap">
-				<div className="soledad-container">
+				<div className="weboratory-container">
 					<div className="nh-magazine-cols">
 						<MagazineColumn
 							title={site.localBoxTitle}
@@ -411,28 +411,28 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 
 			{/* Latest grid + sidebar */}
 			{latestGrid.length > 0 && (
-				<section className="soledad-section-gap">
-					<div className="soledad-container">
-						<div className="soledad-main-layout">
+				<section className="weboratory-section-gap">
+					<div className="weboratory-container">
+						<div className="weboratory-main-layout">
 							<div>
-								<h2 className="soledad-section-title">Ultimele articole</h2>
-								<div className="soledad-posts-grid">
+								<h2 className="weboratory-section-title">Ultimele articole</h2>
+								<div className="weboratory-posts-grid">
 									{latestGrid.map((post) => (
-										<SoledadPostCard key={post.slug} data={post} variant="grid" />
+										<WeboratoryPostCard key={post.slug} data={post} variant="grid" />
 									))}
 								</div>
-								<div className="soledad-load-more">
-									<Link href={`/categorie/${site.categorySlug}`} className="soledad-btn">
+								<div className="weboratory-load-more">
+									<Link href={`/categorie/${site.categorySlug}`} className="weboratory-btn">
 										Mai multe articole
 									</Link>
 								</div>
 							</div>
-							<aside className="soledad-sidebar">
-								<div className="soledad-widget">
-									<span className="soledad-widget__label">{site.sidebarLabel}</span>
-									<h3 className="soledad-widget__title">{site.sidebarTitle}</h3>
-									<p className="soledad-widget__text">{site.sidebarText}</p>
-									<div className="soledad-social-row">
+							<aside className="weboratory-sidebar">
+								<div className="weboratory-widget">
+									<span className="weboratory-widget__label">{site.sidebarLabel}</span>
+									<h3 className="weboratory-widget__title">{site.sidebarTitle}</h3>
+									<p className="weboratory-widget__text">{site.sidebarText}</p>
+									<div className="weboratory-social-row">
 										<a href={SocialLink.fb.url} aria-label="Facebook" rel="noopener noreferrer" target="_blank">
 											<i className={SocialLink.fb.icon} />
 										</a>
@@ -444,9 +444,9 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 										</a>
 									</div>
 								</div>
-								<div className="soledad-widget">
-									<h3 className="soledad-widget__title">De citit</h3>
-									<ul className="soledad-widget-list">
+								<div className="weboratory-widget">
+									<h3 className="weboratory-widget__title">De citit</h3>
+									<ul className="weboratory-widget-list">
 										{sidebarPosts.map((post) => (
 											<li key={post.slug}>
 												<Link href={getPostHref(post)}>{post.title}</Link>
@@ -455,8 +455,8 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 										))}
 									</ul>
 								</div>
-								<div className="soledad-widget soledad-widget--newsletter">
-									<h3 className="soledad-widget__title">Newsletter</h3>
+								<div className="weboratory-widget weboratory-widget--newsletter">
+									<h3 className="weboratory-widget__title">Newsletter</h3>
 									<WidgetNewsletter />
 								</div>
 							</aside>
@@ -466,20 +466,20 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 			)}
 
 			{/* Partner network */}
-			<section className="soledad-section-gap soledad-section--alt">
-				<div className="soledad-container">
-					<h2 className="soledad-section-title">Rețeaua Weboratory</h2>
-					<div className="soledad-partner-grid">
+			<section className="weboratory-section-gap weboratory-section--alt">
+				<div className="weboratory-container">
+					<h2 className="weboratory-section-title">Rețeaua Weboratory</h2>
+					<div className="weboratory-partner-grid">
 						{PARTNER_FEEDS.map(({ key, label, href }) => {
 							const item = sitemaps?.[key]?.[0];
 							if (!item) return null;
 							return (
-								<article key={key} className="soledad-partner-card">
-									<span className="soledad-partner-card__label">{label}</span>
+								<article key={key} className="weboratory-partner-card">
+									<span className="weboratory-partner-card__label">{label}</span>
 									<h4>
 										<a href={item.link || href}>{item.title}</a>
 									</h4>
-									<span className="soledad-post-card__date">{formatDate(item.isoDate)}</span>
+									<span className="weboratory-post-card__date">{formatDate(item.isoDate)}</span>
 								</article>
 							);
 						})}
@@ -490,4 +490,4 @@ const SoledadNewsHub = ({ localPosts, culturePosts, nationalPosts, sitemaps }) =
 	);
 };
 
-export default SoledadNewsHub;
+export default WeboratoryNewsHub;

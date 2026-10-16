@@ -5,9 +5,9 @@ import { buildLocalPostsWithPromos, sortPostsByDate } from "../../lib/homepagePo
 import HeadMeta from "../components/elements/HeadMeta";
 import FooterOne from "../components/footer/FooterOne";
 import HeaderOne from "../components/header/HeaderOne";
-import SoledadNewsHub from "../components/soledad/SoledadNewsHub";
+import WeboratoryNewsHub from "../components/weboratory/WeboratoryNewsHub";
 import publication from "../data/publication";
-import site from "../data/soledadSite";
+import site from "../data/weboratorySite";
 
 const HomeOne = ({ allPosts, sitemaps }) => {
 	const uniquePosts = dedupePostsBySlug(allPosts);
@@ -29,7 +29,7 @@ const HomeOne = ({ allPosts, sitemaps }) => {
 				twitterDescription={publication.seo.twitter.description}
 			/>
 			<HeaderOne />
-			<SoledadNewsHub
+			<WeboratoryNewsHub
 				localPosts={localPosts}
 				culturePosts={culturePosts}
 				nationalPosts={nationalPosts}
