@@ -90,31 +90,13 @@ export async function getServerSideProps({ res }) {
 		...takeLatest((a) => a.isPromo),
 	];
 
-	const weboSitemaps = await Promise.allSettled([
-		new Parser({ timeout: 2000 }).parseURL("https://obliqdesign.ro/rss.xml"),
-		new Parser({ timeout: 2000 }).parseURL("https://meritasamergi.ro/rss.xml"),
-		new Parser({ timeout: 2000 }).parseURL("https://ghidullegal.ro/rss.xml"),
-		new Parser({ timeout: 2000 }).parseURL("https://sfaturidesanatate.ro/rss.xml"),
-		new Parser({ timeout: 2000 }).parseURL("https://ghidulgospodarului.ro/rss.xml"),
-		new Parser({ timeout: 2000 }).parseURL("https://azicemancam.ro/rss.xml"),
-		new Parser({ timeout: 2000 }).parseURL("https://painesicirc.ro/rss.xml"),
-	]);
-
-	const cmItems = await fetchCautiMasinaItems(new Parser({ timeout: 8000 }), 6);
+	const sitemaps = await fetchPartnerSitemaps();
+const cmItems = await fetchCautiMasinaItems(new Parser({ timeout: 8000 }), 6);
 
 	return {
 		props: {
 			allPosts,
-			sitemaps: {
-				obliq: weboSitemaps[0]?.value?.items?.slice(0, 6) || [],
-				mm: weboSitemaps[1]?.value?.items?.slice(0, 6) || [],
-				legal: weboSitemaps[2]?.value?.items?.slice(0, 6) || [],
-				sanatate: weboSitemaps[3]?.value?.items?.slice(0, 6) || [],
-				gospodar: weboSitemaps[4]?.value?.items?.slice(0, 6) || [],
-				azi: weboSitemaps[5]?.value?.items?.slice(0, 6) || [],
-				cm: cmItems,
-				pc: weboSitemaps[6]?.value?.items?.slice(0, 10) || [],
-			},
+			sitemaps,
 		},
 	};
 }
