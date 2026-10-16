@@ -8,6 +8,6 @@ const { getAllPostsSync } = require('../lib/buildPosts.cjs');
 
 const posts = getAllPostsSync(['slug', 'title', 'excerpt', 'date', 'tags', 'featureImg', 'author_name', 'cate']);
 const filtered = posts.filter((p) => !isRecomandarePost(p));
-const xml = generateRssFeed(filtered.sort((a, b) => new Date(b.date) - new Date(a.date)));
+const xml = generateRssFeed(filtered.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 20));
 writeFileSync('./public/rss.xml', xml);
 writeFileSync('./public/feed.rss', xml);
