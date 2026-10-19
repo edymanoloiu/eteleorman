@@ -6,6 +6,11 @@ const onVercel = Boolean(process.env.VERCEL);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: false,
+	// Vercel sets NEXT_ADAPTER_PATH. Keep that adapter, but dedupe static files
+	// first — a duplicate /404 copy races and chmod of 404.html fails the build.
+	adapterPath: process.env.NEXT_ADAPTER_PATH
+		? path.resolve(process.cwd(), 'scripts/vercel-adapter-dedupe.cjs')
+		: undefined,
 	basePath: process.env.NODE_ENV === 'production' ? (process.env.NEXT_PUBLIC_BASEPATH || "") : "",
 	// Public images/posts must stay on the CDN only — NFT was packing ~2100 images into
 	// every lambda (~200MB × 60) which stalls Vercel "Deploying outputs".
