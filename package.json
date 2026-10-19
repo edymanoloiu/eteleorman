@@ -6,7 +6,7 @@
   "scripts": {
     "generate:rss": "node scripts/generate-rss.js",
     "generate:posts": "node scripts/generate-posts-json.js",
-    "prebuild": "npm run generate:posts && npm run generate:evergreen && npm run generate:sitemaps && npm run generate:search && npm run generate:rss && npm run content:validate",
+    "prebuild": "npm run generate:posts && npm run generate:evergreen && npm run generate:sitemaps && npm run generate:search && npm run generate:rss && npm run content:validate && npm run generate:partner-sitemaps",
     "dev": "next dev --turbopack",
     "build": "npm run generate:evergreen && NODE_ENV=production next build --webpack && node scripts/postbuild.cjs",
     "start": "next start",
@@ -17,8 +17,8 @@
     "preview": "npm run pages:build && wrangler pages dev",
     "deploy": "npm run pages:build && wrangler pages deploy",
     "open-next:build": "open-next build --webpack",
-    "cf:build": "npm run generate:evergreen && opennextjs-cloudflare build",
-    "cf:deploy": "npm run generate:evergreen && opennextjs-cloudflare deploy",
+    "cf:build": "npm run generate:evergreen && npm run generate:partner-sitemaps && opennextjs-cloudflare build",
+    "cf:deploy": "npm run generate:evergreen && npm run generate:partner-sitemaps && opennextjs-cloudflare deploy",
     "cf:upload": "opennextjs-cloudflare upload",
     "generate:search": "node scripts/generate-search-index.js",
     "content:validate": "node scripts/content-validate.js",
@@ -40,7 +40,8 @@
     "gsc:sitemap-list": "node scripts/gsc/sitemaps.js list",
     "gsc:sitemap-submit": "node scripts/gsc/sitemaps.js submit",
     "generate:sitemaps": "node scripts/generate-sitemaps.js",
-    "generate:evergreen": "node scripts/generate-evergreen-assets.js"
+    "generate:evergreen": "node scripts/generate-evergreen-assets.js",
+    "generate:partner-sitemaps": "node scripts/generate-partner-sitemaps.js"
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
