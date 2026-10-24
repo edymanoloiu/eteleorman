@@ -1,5 +1,5 @@
 ---
-title: "CautiMasina.ro adună într-un singur loc informațiile necesare pentru cumpărarea unei mașini"
+title: "CautiMasina.ro adună într-un singur loc toate informațiile necesare pentru cumpărarea unei mașini noi sau second-hand"
 desc: "CautiMasina.ro dezvoltă paginile de anunțuri auto cu specificații din catalog, costuri pentru un plin, date despre încărcarea mașinilor electrice și instrumente pentru compararea ofertelor."
 photo: /resources/blog/cautimasina-informatii-cumparare-masina.webp
 postFormat: 'text'
