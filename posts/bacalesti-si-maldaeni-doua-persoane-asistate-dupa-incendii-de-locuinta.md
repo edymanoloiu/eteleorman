@@ -38,4 +38,3 @@ Proprietarul din Băcălești a primit îngrijiri de la SMURD, dar a refuzat tra
 ## Surse
 
 - https://isutr.igsu.ro/comunicate-de-presa/doua-incendii-de-locuinta-in-localitatile-bacalesti-si-maldaeni-937
-
