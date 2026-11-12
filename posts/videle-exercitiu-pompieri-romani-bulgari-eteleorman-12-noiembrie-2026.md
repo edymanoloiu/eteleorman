@@ -18,6 +18,7 @@ author_bio: 'Mara Ionescu este jurnalistă și editor la Azi în Alexandria, cu 
 tags:
 - Actualitate
 - Știri locale
+---
 
 
 ![Teleorman: pompieri români și bulgari, exercițiu comun de intervenție la incendii în Videle](/images/posts/videle-exercitiu-pompieri-romani-bulgari-eteleorman-12-noiembrie-2026.webp)
