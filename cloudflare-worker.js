@@ -16,7 +16,13 @@ function isCacheablePublicRequest(request, response, url) {
 	return true;
 }
 
-function edgeTtl(pathname) { return pathname === "/" ? 300 : 3600; }
+function edgeTtl(pathname) {
+	// A deployment changes the Worker version and therefore its cache key. Long-lived
+	// article caching cuts repeated SSR CPU without serving an older deployment.
+	if (pathname === "/") return 300;
+	if (pathname.startsWith("/post/") || pathname.startsWith("/recomandare/")) return 86400;
+	return 3600;
+}
 
 export default {
 	async fetch(request, env, ctx) {
