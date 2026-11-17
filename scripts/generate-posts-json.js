@@ -56,8 +56,8 @@ function pickForIndex(data) {
 	for (const key of INDEX_STORE_KEYS) {
 		if (data[key] === undefined || data[key] === null) continue;
 		let v = data[key];
-		if (key === 'author_bio' && typeof v === 'string' && v.length > 450) {
-			v = `${v.slice(0, 450)}…`;
+		if ((key === 'author_bio' || key === 'excerpt') && typeof v === 'string' && v.length > 500) {
+			v = `${v.slice(0, 500)}…`;
 		}
 		o[key] = v;
 	}
