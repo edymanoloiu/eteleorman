@@ -111,5 +111,8 @@ for (const [type, dir, prefix] of evergreen) {
 }
 
 const out = path.join(ROOT, 'public/search-index.json');
-fs.writeFileSync(out, JSON.stringify(entries));
-console.log(`search-index: ${entries.length} intrări → ${out}`);
+// The search page consumes at most 5,000 entries; keep the static asset below
+// Cloudflare Workers' 25 MiB per-file limit as the archive grows.
+const searchEntries = entries.slice(0, 5000);
+fs.writeFileSync(out, JSON.stringify(searchEntries));
+console.log(`search-index: ${searchEntries.length} intrări → ${out}`);
