@@ -22,7 +22,7 @@ tags:
 
 ![Verificare istoric auto - Ghid complet pentru achiziții auto](https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg)
 
-În lumea auto, [verificare istoric auto](https://www.carvertical.com/ro/verificare-prealabila?a=cautimasina&voucher=cautimasina&b=7b50bf5a) este o prioritate pentru mulți cumpărători. Platforma CautiMasina.ro îți oferă acces rapid la anunțuri actualizate și te ajută să iei o decizie informată.
+În lumea auto, [verificare istoric auto](https://www.carvertical.deal/WCKMXS/66RQ8Q/?source_id=AFF) este o prioritate pentru mulți cumpărători. Platforma CautiMasina.ro îți oferă acces rapid la anunțuri actualizate și te ajută să iei o decizie informată.
 
 CautiMasina.ro centralizează anunțuri de pe sute de site-uri auto și oferă informații detaliate pentru fiecare vehicul. Prin simpla navigare, poți compara consumul, puterea și performanțele modelelor, iar platforma îți afișează scorurile de siguranță și prețuri reale. Astfel, [verificare istoric auto](https://cautimasina.ro) devine o experiență rapidă și sigură.
 
