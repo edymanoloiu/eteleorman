@@ -3,13 +3,13 @@ topPost: true
 postFormat: 'text'
 trending: false
 title: "Evenimentele din județul Teleorman pe 27 noiembrie 2026"
-excerpt: "Pe 27 noiembrie 2026, județul Teleorman a fost martorul unor incidente variate, accidente rutiere, inițiative economice importante și activități educaționale. Detalii despre evenimentele relevante din localitate sunt prezentate în continuare."
+excerpt: "Ieri, 27 noiembrie 2026, județul Teleorman a fost scena unor evenimente diverse, de la intervenții ale pompierilor la discuții despre dezvoltarea urbană. Află cele mai importante noutăți din Alexandria, Roșiorii de Vede și alte localități."
 featureImg: https://upload.wikimedia.org/wikipedia/commons/1/15/Prefectura_Teleorman.jpg
 date: Nov 27 2026
 cate: 'Azi in Alexandria'
 cate_bg: 'bg-color-red-one'
 cate_img: '/images/category/world.png'
-post_views: '9K Vizualizari'
+post_views: '6K Vizualizari'
 post_share: '37 Shares'
 author_name: 'Mara Ionescu'
 author_desg: 'Publisher'
@@ -21,38 +21,36 @@ tags:
 
 ## ⚠️ Evenimente și incidente
 
-Poliția Rurală Alexandria a reținut recent un bărbat implicat în acte de violență, incident ce a avut loc pe 22 noiembrie. De asemenea, autoritățile continuă căutările pentru o femeie de 52 de ani din comuna Ciuperceni, care nu a mai revenit acasă din 16 noiembrie.
+În județul Teleorman, un bărbat a fost reținut pentru 30 de zile în Alexandria, după ce a fost acuzat de violență fizică în satul Cernetu, comuna Mârzănești. Incidentul a avut loc pe 22 noiembrie, iar făptașul, care fusese eliberat condiționat recent, este investigat de polițiștii de la Secția Nr. 1 Poliție Rurală Alexandria.
 
-Pompierii au intervenit pentru a stinge două incendii în localitățile Spătărei și Dracea, cauzate, se pare, de coșurile de fum necorespunzător izolate.
+În Roșiorii de Vede, un incendiu a necesitat intervenția rapidă a pompierilor, rezultând în arsuri pentru două persoane. Totodată, pe 23 noiembrie, poliția rutieră a desfășurat o acțiune pe DN 6, aplicând amenzi în valoare totală de 53.000 lei, în cadrul campaniei „RELEU”.
 
-## 🚨 Accidente rutiere
+## 🚨 Accidente
 
-În dimineața zilei de 27 noiembrie, județul a înregistrat două accidente rutiere care s-au produs aproape simultan. Informațiile suplimentare despre aceste evenimente nu sunt încă disponibile.
+Centrul Infotrafic al Poliției Române a informat că, în dimineața zilei de 27 noiembrie, nu s-au înregistrat blocaje pe drumurile naționale sau autostrăzi din cauza accidentelor sau a vremii nefavorabile. Totuși, carosabilul se prezenta umed în majoritatea județelor, inclusiv în Teleorman, din cauza ploilor recente.
 
-## 💡 Dezvoltare economică
+## 💡 Economie
 
-Consiliul Județean Teleorman se concentrează pe atragerea de fonduri europene, având în vedere opt proiecte cu o valoare totală estimată de 100 de milioane de lei. Aceste inițiative vizează modernizarea infrastructurii educaționale și sportive, îmbunătățirea transportului public ecologic în Videle și regenerarea spațiilor publice, inclusiv extinderea Școlii Gimnaziale „Alexandru Colfescu” din Alexandria.
+În cadrul discuțiilor despre comasarea unităților administrativ-teritoriale, primarul orașului Videle, Cornel Gogan, a exprimat preocupări legate de specificitatea localităților. Acesta a avertizat că o eventuală comasare forțată ar putea duce la un rezultat negativ în referendumul comunităților.
 
-Ministerul Dezvoltării a lansat o procedură de transparență pentru o Ordonanță de Urgență ce vizează comasarea comunelor cu populație mică, un subiect ce a stârnit dezbateri între primarii din județ.
+## 🎓 Educație
 
-## 🎓 Inițiative educaționale
+Muzeul Județean Teleorman, în colaborare cu Școala Gimnazială Plosca, a organizat un eveniment dedicat Zilei Naționale a României, ce va avea loc în Alexandria, incluzând o prezentare a istoriei Marii Uniri din 1918. De asemenea, Inspectoratul Școlar Județean a avut pe 26 noiembrie o întâlnire cu directorii școlilor din județ, discutând despre calitatea educației și planurile pentru anul școlar următor.
 
-Programul de educație socioemoțională, dezvoltat de Salvați Copiii România, se extinde și în grădinițele din județul Teleorman, oferind resurse gratuite pentru educatori și părinți pe platforma safimprieteni.ro.
+Un exemplu remarcabil este povestea lui Petrică Dulgheru, un tânăr din Teleorman, care, deși a fost ultimul la admiterea liceală, a reușit să obțină un doctorat în chimie la University College Dublin și un MBA, având acum un start-up și un fond de investiții pentru antreprenori romi.
 
-De asemenea, un tânăr dintr-o comunitate de romi, Petrică Dulgheru, a obținut un doctorat în chimie la Dublin și își dedică eforturile sprijinirii antreprenorilor din comunitatea sa.
+## 🏗 Dezvoltare urbană
 
-## 🏗 Proiecte de infrastructură
+Consiliul Local din Videle s-a întrunit pe 27 noiembrie pentru a discuta proiecte importante, cum ar fi stabilirea impozitelor pentru anul fiscal 2027 și aprobarea plafonului creanțelor fiscale restante. În Turnu Măgurele, autoritățile locale au în vedere construirea unui nou ambulatoriu la Spitalul Municipal și modernizarea infrastructurii portuare.
 
-Consiliul Local Videle s-a întrunit pe 27 noiembrie pentru a discuta despre impozitele și taxele locale pentru 2027, precum și despre creanțele fiscale restante. În Turnu Măgurele, continuă lucrările de modernizare a infrastructurii portuare și construcția unui nou ambulatoriu la Spitalul Municipal.
+## 🌳 Mediu
 
-## 🌳 Protecția mediului
-
-Două firme, SC EUROLIGHT TOP ENERGY SRL și SC POTCOAVA DUNARII SRL, au solicitat acorduri de mediu pentru proiecte de dezvoltare în județ. Prima intenționează să construiască un parc fotovoltaic în Fântânele, iar cealaltă o spălătorie auto în aceeași localitate. Detalii pot fi obținute de la Direcția Județeană de Mediu.
+Firma SC Potcoava Dunării SRL a depus o solicitare pentru obținerea acordului de mediu necesar construirii unei spălătorii auto în comuna Fântânele, iar informații suplimentare pot fi consultate la Direcția Județeană de Mediu din Alexandria.
 
 ## 🏛 Politică locală
 
-Președintele Consiliului Județean Teleorman, Adrian Gâdea, a subliniat necesitatea colaborării între ADR Sud-Muntenia și administrațiile locale pentru a direcționa fondurile spre nevoile comunităților. De asemenea, Icoana făcătoare de minuni a Maicii Domnului „Gherontissa” din Sfântul Munte Athos a fost adusă în pelerinaj de o delegație a Mănăstirii Pantocrator, fiind disponibilă pentru închinare până pe 2 decembrie.
+Discuțiile privind comasarea comunelor mici continuă să genereze controverse în Teleorman, primarul din Videle insistând asupra nevoii de a respecta specificul fiecărei localități. De asemenea, PS Galaction a condus o delegație din Sfântul Munte Athos, aducând în județ icoana Maicii Domnului „Gherontissa”, care va putea fi venerată de credincioși până pe 2 decembrie.
 
 ## 🔎 Concluzie
 
-Data de 27 noiembrie 2026 a adus o serie de evenimente notabile în județul Teleorman, incluzând atât incidente, cât și progrese în domeniul economic, educațional și ecologic, alături de activități politice și religioase semnificative.
+Județul Teleorman a avut parte pe 27 noiembrie 2026 de o zi plină de evenimente, cu intervenții ale autorităților în cazuri de violență și incendii, dar și cu activități culturale și discuții despre viitorul administrativ al localităților. Educația și siguranța publică rămân priorități esențiale pentru comunitate.
