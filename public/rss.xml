@@ -9,7 +9,7 @@
             <link>https://eteleorman.ro</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 28 Nov 2026 08:45:47 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 08:59:03 GMT</lastBuildDate>
         <atom:link href="https://eteleorman.ro/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[ro]]></language>
         <item>
@@ -21,6 +21,16 @@
             <category><![CDATA[Știri]]></category>
             <pubDate>Fri, 27 Nov 2026 22:00:00 GMT</pubDate>
             <enclosure url="/images/posts/accident-lita-femeie-53-ani-transportata-spital.webp" length="0" type="image/jpeg"/>
+        </item>
+        <item>
+            <title><![CDATA[Alexandria și județul Teleorman, sub cod galben: ninsori și viscol în weekend]]></title>
+            <description><![CDATA[În Alexandria și județul Teleorman, avertizarea emisă la 28 noiembrie indică 15–20 cm de zăpadă și rafale de 55–60 km/h. Vezi orele și zona afectată.]]></description>
+            <link>https://eteleorman.ro/post/anm-cod-galben-28-29-noiembrie-2026-eteleorman</link>
+            <guid isPermaLink="true">https://eteleorman.ro/post/anm-cod-galben-28-29-noiembrie-2026-eteleorman</guid>
+            <category><![CDATA[Stiri nationale si internationale]]></category>
+            <category><![CDATA[Știri]]></category>
+            <pubDate>Fri, 27 Nov 2026 22:00:00 GMT</pubDate>
+            <enclosure url="/images/posts/anm-cod-galben-28-29-noiembrie-2026-eteleorman.webp" length="0" type="image/jpeg"/>
         </item>
         <item>
             <title><![CDATA[Horoscop azi pentru zodia ta – previziuni actualizate zilnic – 28 noiembrie 2026]]></title>
@@ -41,15 +51,6 @@
             <category><![CDATA[Horoscop]]></category>
             <pubDate>Fri, 27 Nov 2026 22:00:00 GMT</pubDate>
             <enclosure url="https://images.unsplash.com/photo-1614089254151-676cc373b01e" length="0" type="image/jpeg"/>
-        </item>
-        <item>
-            <title><![CDATA[În Teleorman, viscolul este prognozat după ora 15:00 sâmbătă]]></title>
-            <description><![CDATA[ANM a emis două etape de cod galben până pe 29 noiembrie la 10:00; vântul poate avea rafale de 50–70 km/h.]]></description>
-            <link>https://eteleorman.ro/post/anm-teleorman-vant-viscol-sambata-duminica-2026</link>
-            <guid isPermaLink="true">https://eteleorman.ro/post/anm-teleorman-vant-viscol-sambata-duminica-2026</guid>
-            <category><![CDATA[Azi in Alexandria]]></category>
-            <pubDate>Thu, 26 Nov 2026 22:00:00 GMT</pubDate>
-            <enclosure url="/images/posts/anm-teleorman-vant-viscol-sambata-duminica-2026.webp" length="0" type="image/jpeg"/>
         </item>
         <item>
             <title><![CDATA[Ce spun astrele azi? Horoscopul zilei pentru toate zodiile – 27 noiembrie 2026]]></title>
