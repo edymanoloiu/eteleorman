@@ -9,9 +9,18 @@
             <link>https://eteleorman.ro</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 27 Nov 2026 15:13:12 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Nov 2026 17:01:02 GMT</lastBuildDate>
         <atom:link href="https://eteleorman.ro/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[ro]]></language>
+        <item>
+            <title><![CDATA[În Teleorman, viscolul este prognozat după ora 15:00 sâmbătă]]></title>
+            <description><![CDATA[ANM a emis două etape de cod galben până pe 29 noiembrie la 10:00; vântul poate avea rafale de 50–70 km/h.]]></description>
+            <link>https://eteleorman.ro/post/anm-teleorman-vant-viscol-sambata-duminica-2026</link>
+            <guid isPermaLink="true">https://eteleorman.ro/post/anm-teleorman-vant-viscol-sambata-duminica-2026</guid>
+            <category><![CDATA[Azi in Alexandria]]></category>
+            <pubDate>Thu, 26 Nov 2026 22:00:00 GMT</pubDate>
+            <enclosure url="/images/posts/anm-teleorman-vant-viscol-sambata-duminica-2026.webp" length="0" type="image/jpeg"/>
+        </item>
         <item>
             <title><![CDATA[Ce spun astrele azi? Horoscopul zilei pentru toate zodiile – 27 noiembrie 2026]]></title>
             <description><![CDATA[Horoscop zilnic – 27 noiembrie 2026 Interpretare astrologică generală pentru 27 noiembrie 2026: zi favorabilă pentru clarificarea priorităților, cu atenție la modul în care comunicați intențiile. Berbec General: Astăzi aveți energie pentru a demara corecturi în proiecte începute anterior; pragmatismul va fi mai util decât impulsivitatea. Aceasta este o interpretare generală, nu o predicție certă.]]></description>
@@ -190,16 +199,6 @@
             <category><![CDATA[Horoscop]]></category>
             <pubDate>Mon, 23 Nov 2026 22:00:00 GMT</pubDate>
             <enclosure url="https://images.unsplash.com/photo-1614089254151-676cc373b01e" length="0" type="image/jpeg"/>
-        </item>
-        <item>
-            <title><![CDATA[Accident între două mașini la intersecția Libertății cu 1 Decembrie]]></title>
-            <description><![CDATA[ISU Teleorman: două persoane au fost rănite după coliziunea dintre două autoturisme, la intersecția străzilor Libertății și 1 Decembrie.]]></description>
-            <link>https://eteleorman.ro/post/doua-persoane-ranite-accident-alexandria-eteleorman-23-noiembrie-2026</link>
-            <guid isPermaLink="true">https://eteleorman.ro/post/doua-persoane-ranite-accident-alexandria-eteleorman-23-noiembrie-2026</guid>
-            <category><![CDATA[Actualitate]]></category>
-            <category><![CDATA[Știri locale]]></category>
-            <pubDate>Sun, 22 Nov 2026 22:00:00 GMT</pubDate>
-            <enclosure url="/images/posts/doua-persoane-ranite-accident-alexandria-eteleorman-23-noiembrie-2026.webp" length="0" type="image/jpeg"/>
         </item>
     </channel>
 </rss>
